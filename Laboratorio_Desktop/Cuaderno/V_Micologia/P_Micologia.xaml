@@ -1,0 +1,32 @@
+﻿<Page x:Class="Laboratorio_Desktop.Cuaderno.V_Micologia.P_Micologia"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" d:DesignWidth="571"
+	Title="P_Serologia" Height="580">
+
+    <Grid Margin="0,0,0,10">
+        <ComboBox Height="23" HorizontalAlignment="Left" IsEditable="True" Margin="88,78,0,0" Name="dl_Bioquimicos" VerticalAlignment="Top" Width="467" />
+        <Label Content="Bioquímico:" FontWeight="ExtraBold" Height="28" HorizontalAlignment="Left" Margin="0,73,0,0" Name="label4" VerticalAlignment="Top" Width="86" />
+        <Label Content="Micología" FontSize="20" FontWeight="Bold" Foreground="#FF56A6E8" Height="47" HorizontalAlignment="Left" Margin="10,10,0,0" Name="label2" VerticalAlignment="Top" Width="219" />
+        <Label Content="Muestra:" FontWeight="Black" Height="28" HorizontalAlignment="Left" Margin="102,141,0,0" Name="label5" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="169,209,0,0" Name="tb_Directo" VerticalAlignment="Top" Width="386" MaxLength="150" />
+        <Label Content="Ex. Micológico Directo:" FontWeight="Black" Height="28" HorizontalAlignment="Left" Margin="21,206,0,0" Name="label3" VerticalAlignment="Top" Width="141" />
+        <Label Content="Tinta China:" FontWeight="Black" Height="28" HorizontalAlignment="Left" Margin="82,246,0,0" Name="label7" VerticalAlignment="Top" Width="87" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="169,251,0,0" Name="cb_Tinta" VerticalAlignment="Top" Width="386">
+            <ComboBoxItem Content="" IsSelected="True"/>
+            <ComboBoxItem Content="POSITIVO para Criptococcus neoformans"/>
+            <ComboBoxItem Content="NEGATIVO para Criptococcus neoformans" />
+          
+        </ComboBox>
+        <Label Content="Observaciones:" Height="28" HorizontalAlignment="Left" Margin="67,292,0,0" x:Name="label22" VerticalAlignment="Top" FontWeight="Bold" />
+        <TextBox Height="128" TabIndex="27" TextWrapping="Wrap" AcceptsReturn="True" HorizontalAlignment="Left" Margin="169,292,0,0" x:Name="tb_Observacion" VerticalAlignment="Top" Width="386" MaxLength="500" />
+        <Button Content="Guardar" Height="46" HorizontalAlignment="Left" Margin="226,444,0,0" x:Name="bt_Guardar" VerticalAlignment="Top" Width="164" Click="bt_Guardar_Click" TabIndex="28" FontWeight="Bold" />
+        <Button Content="Imprimir" x:Name="bt_Imprimir" HorizontalAlignment="Left" Margin="477,21,0,0" VerticalAlignment="Top" TabIndex="29" Width="75" Click="bt_Imprimir_Click"/>
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="169,141,0,0" x:Name="tb_Muestra" VerticalAlignment="Top" Width="386" MaxLength="150" />
+        <Label Content="Cultivo Micológico:" FontWeight="Black" Height="28" HorizontalAlignment="Left" Margin="43,172,0,0" x:Name="label5_Copy" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="169,172,0,0" x:Name="tb_Cultivo" VerticalAlignment="Top" Width="386" MaxLength="150" />
+        <Button Content="Vista Previa" HorizontalAlignment="Left" Margin="397,21,0,0" VerticalAlignment="Top" Width="75" IsCancel="True" Click="Button_Click_1"/>
+    </Grid>
+</Page>

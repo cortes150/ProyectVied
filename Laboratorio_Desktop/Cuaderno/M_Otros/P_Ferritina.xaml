@@ -1,0 +1,31 @@
+﻿<Page x:Class="Laboratorio_Desktop.Cuaderno.M_Otros.P_Ferritina"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" d:DesignWidth="571"
+	Title="P_Sanguinea" Height="840.224">
+
+    <Grid Margin="0,0,0,10">
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="91,101,0,0" Name="dl_Bioquimicos" VerticalAlignment="Top" Width="467" IsEditable="True" TabIndex="1" />
+        <Label Content="Bioquímico:" Height="28" HorizontalAlignment="Left" Margin="10,96,0,0" Name="label4" VerticalAlignment="Top" Width="86" FontWeight="ExtraBold" />
+        <Label Content="Ferritina" FontSize="20" FontWeight="Bold" Foreground="#FF56A6E8" Height="47" HorizontalAlignment="Left" Margin="10,10,0,0" Name="label2" VerticalAlignment="Top" Width="440" />
+        <Label Content="1) Ferritina:" FontWeight="ExtraBold" Height="28" HorizontalAlignment="Left" Margin="17,210,0,0" Name="label9" VerticalAlignment="Top" Width="184" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="124,210,0,0" Name="tb_1" VerticalAlignment="Top" Width="158" IsEnabled="False" TabIndex="2" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="305,210,0,0" Name="cb_1" VerticalAlignment="Top" Width="253" IsEnabled="False" TabIndex="3" >
+            <ComboBoxItem Content="Masculino:'15-230' ng/ml" IsSelected="True" />
+            <ComboBoxItem Content="Femenino:'10-125' ng/ml" />
+            <ComboBoxItem Content="Rec. Nac.'25-200' ng/ml" />
+            <ComboBoxItem Content="Niño &lt; 1 mes:'200-600'ng/ml" />
+            <ComboBoxItem Content="Niño 2 a 5 mes:'50-200' ng/ml" />
+            <ComboBoxItem Content="Niño 6 mes a 15 años:'7-142'ng/ml" />
+        </ComboBox>
+        <Label Content="Variable" Height="39" HorizontalAlignment="Left" Margin="32,166,0,0" Name="label19" VerticalAlignment="Top" FontSize="15" />
+        <Label Content="Resultado" FontSize="15" Height="39" HorizontalAlignment="Left" Margin="167,166,0,0" Name="label20" VerticalAlignment="Top" />
+        <Label Content="Valor de Referencia" FontSize="15" Height="39" HorizontalAlignment="Left" Margin="361,166,0,0" Name="label21" VerticalAlignment="Top" />
+        <Label Content="Observaciones:" Height="28" HorizontalAlignment="Left" Margin="10,382,0,0" Name="label22" VerticalAlignment="Top" FontWeight="Bold" />
+        <TextBox Height="438" TabIndex="18" TextWrapping="Wrap" AcceptsReturn="True" HorizontalAlignment="Left" Margin="110,382,0,0" Name="tb_Observacion" VerticalAlignment="Top" Width="442" />
+        <Button Content="Imprimir" x:Name="bt_Imprimir" HorizontalAlignment="Left" Margin="477,21,0,0" VerticalAlignment="Top" TabIndex="19" Width="75" Click="bt_Imprimir_Click"/>
+        <Button Content="Guardar" Height="46" HorizontalAlignment="Left" Margin="236,304,0,0" x:Name="bt_Guardar" VerticalAlignment="Top" Width="165" Click="bt_Guardar_Click" TabIndex="17" FontWeight="Bold" />
+    </Grid>
+</Page>

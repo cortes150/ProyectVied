@@ -1,0 +1,36 @@
+﻿<Page x:Class="Laboratorio_Desktop.Index"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+       d:DesignHeight="636" d:DesignWidth="879"
+	Title="Index">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="147*" />
+            <RowDefinition Height="316*" />
+            <RowDefinition Height="173*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="310*" />
+            <ColumnDefinition Width="442*" />
+            <ColumnDefinition Width="127*" />
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Laboratorio_Desktop;component/Images/laboratorio.jpg" />
+        </Grid.Background>
+        <GroupBox Margin="43,91,0,0" Name="groupBox1" Foreground="Black" Background="#FFBAC9EB" HorizontalAlignment="Left" Width="367" Height="181" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1">
+            <Grid Height="176">
+                <TextBox KeyDown="tb_usuario_KeyDown_1" Height="23" MaxLength="30" HorizontalAlignment="Left" Margin="114,52,0,0" Name="tb_usuario" VerticalAlignment="Top" Width="120" TabIndex="1" />
+                <Label Content="Usuario:" Height="28" HorizontalAlignment="Left" Margin="41,46,0,0" Name="label1" VerticalAlignment="Top" FontSize="16" />
+                <Label Content="Contraseña:" Height="28" HorizontalAlignment="Left" Margin="15,86,0,0" Name="label2" VerticalAlignment="Top" FontSize="16" />
+                <Label Content="Iniciar Sesión" Height="35" HorizontalAlignment="Left" Margin="116,0,0,0" Name="label3" VerticalAlignment="Top" FontWeight="Black" FontSize="22" />
+                <Button Content="Iniciar" Height="23" HorizontalAlignment="Left" Margin="155,140,0,0" Name="btn_iniciar" VerticalAlignment="Top" Width="75" FontWeight="Medium" Click="btn_iniciar_Click" TabIndex="3" />
+                <PasswordBox Height="23" MaxLength="30" HorizontalAlignment="Left" Margin="114,90,0,0" Name="tb_password" VerticalAlignment="Top" Width="120" KeyDown="tb_password_KeyDown_1" TabIndex="2" />
+                <Image Height="102" HorizontalAlignment="Left" Margin="237,31,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="118" Source="/Laboratorio_Desktop;component/Images/iconos/login.png" />
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Page>

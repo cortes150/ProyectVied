@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Laboratorio" Class="DBLaboratorioDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.0.19\serverviedma;Initial Catalog=Laboratorio;User ID=sa" SettingsObjectName="Laboratorio_Desktop.Properties.Settings" SettingsPropertyName="LaboratorioConnectionString4" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Accion" Member="Accion">
+    <Type Name="Accion">
+      <Column Name="AccionID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Accion_Accion_Usuario" Member="Accion_Usuario" ThisKey="AccionID" OtherKey="AccionID" Type="Accion_Usuario" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Accion_Usuario" Member="Accion_Usuario">
+    <Type Name="Accion_Usuario">
+      <Column Name="Accion_UsuarioID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AccionID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Accion_Accion_Usuario" Member="Accion" ThisKey="AccionID" OtherKey="AccionID" Type="Accion" IsForeignKey="true" />
+      <Association Name="Usuario_Accion_Usuario" Member="Usuario" ThisKey="UsuarioID" OtherKey="UsuarioID" Type="Usuario" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Bioquimico" Member="Bioquimico">
+    <Type Name="Bioquimico">
+      <Column Name="BioquimicoID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Prefijo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Apellido_Paterno" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Apellido_Materno" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Celular" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Area" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Usuario_Bioquimico" Member="Usuario" ThisKey="UsuarioID" OtherKey="UsuarioID" Type="Usuario" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Categoria" Member="Categoria">
+    <Type Name="Categoria">
+      <Column Name="CategoriaID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ModuloN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Categoria_SubCategoria" Member="SubCategoria" ThisKey="CategoriaID" OtherKey="CategoriaID" Type="SubCategoria" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Consulta" Member="Consulta">
+    <Type Name="Consulta">
+      <Column Name="ConsultaID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="N_Registro" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MedicoID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HistorialID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HCL" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Fecha" Type="System.DateTime" DbType="DateTime2" CanBeNull="true" />
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SolicitudID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Tipo_Paciente" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Convenio" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nombre_Medico" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Association Name="Consulta_M_Microorganismo" Member="M_Microorganismo" ThisKey="ConsultaID" OtherKey="ConsultaID" Type="M_Microorganismo" />
+      <Association Name="Consulta_M_Sanguinea" Member="M_Sanguinea" ThisKey="ConsultaID" OtherKey="ConsultaID" Type="M_Sanguinea" />
+      <Association Name="Usuario_Consulta" Member="Usuario" ThisKey="UsuarioID" OtherKey="UsuarioID" Type="Usuario" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Consulta_Laboratorio" Member="Consulta_Laboratorio">
+    <Type Name="Consulta_Laboratorio">
+      <Column Name="Consulta_LaboratorioID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ConsultaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Modulo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Fecha" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Codigo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BioquimicoID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Observacion" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Nota" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Consulta_Laboratorio_Variable_Consulta" Member="Variable_Consulta" ThisKey="Consulta_LaboratorioID" OtherKey="Consulta_LaboratorioID" Type="Variable_Consulta" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Cuaderno_Usuario" Member="Cuaderno_Usuario">
+    <Type Name="Cuaderno_Usuario">
+      <Column Name="Cuaderno_UsuarioId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CuadernoID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Cuaderno_UsuarioTemp" Member="Cuaderno_UsuarioTemp">
+    <Type Name="Cuaderno_UsuarioTemp">
+      <Column Name="Cuaderno_UsuarioId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CuadernoID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Cuadernos" Member="Cuadernos">
+    <Type Name="Cuadernos">
+      <Column Name="CuadernoID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Cuadernos_Variables" Member="Variables" ThisKey="CuadernoID" OtherKey="CuadernoID" Type="Variables" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Doctor" Member="Doctor">
+    <Type Name="Doctor">
+      <Column Name="DoctorID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Codigo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Apellido_Paterno" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Apellido_Materno" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CI" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Especialidad" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Historial_Temporal" Member="Historial_Temporal">
+    <Type Name="Historial_Temporal">
+      <Column Name="Historial_TemporalID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Apellido_Paterno" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Apellido_Materno" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CI" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Departamento" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ciudad" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sexo" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Direccion" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Fecha_Creacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Fecha_Nacimiento" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Estado_Civil" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Celular" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Telefono" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Codigo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Usuario_Historial_Temporal" Member="Usuario" ThisKey="UsuarioID" OtherKey="UsuarioID" Type="Usuario" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_Antibiograma" Member="M_Antibiograma">
+    <Type Name="M_Antibiograma">
+      <Column Name="AntibiogramaID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Antibiotico" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Resultado" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MicroorganismoID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ConsultaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nota" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Observacion" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="NotaSeleccion" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_DetHormonales" Member="M_DetHormonales">
+    <Type Name="M_DetHormonales">
+      <Column Name="Det_HormonalesID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Marcador" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Resultado" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Valor_Ref" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ConsultaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Intervalo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Unidad" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_Hematologia" Member="M_Hematologia">
+    <Type Name="M_Hematologia">
+      <Column Name="HematologiaID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Codigo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Valor" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SubCategoriaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ConsultaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Modulo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_Histocompatibilida" Member="M_Histocompatibilida">
+    <Type Name="M_Histocompatibilida">
+      <Column Name="HistocompatibilidadID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BioquimicoID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ConsultaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Codigo2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Valor_Ref" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Alo_Cross1T" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Alo_Cross1B" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Alo_Cross2T" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AloCross2B" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GR_Hla_a1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GR_Hla_b1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GR_Hla_b1_1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GR_Hla_c1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GR_Hla_dra1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GR_Hla_drb1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GR_Hla_a2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GR_Hla_b2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GR_Hla_b2_2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GR_Hla_c2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GR_Hla_dra2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GR_Hla_drb2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GD_Hla_a1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GD_Hla_b1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GD_Hla_b1_1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GD_Hla_c1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GD_Hla_c2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GD_Hla_dra1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GD_Hla_drb1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GD_Hla_a2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GD_Hla_b2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GD_Hla_b2_2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GD_Hla_dra2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GD_Hla_drb2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nota" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Nom_donante" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="edad_donante" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="interpretacion" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="Nota2" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_InmunologiaInf" Member="M_InmunologiaInf">
+    <Type Name="M_InmunologiaInf">
+      <Column Name="Inmunologia_InfecciosaID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Valor" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="ConsultaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Codigo" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="BioquimicoID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Observacion" Type="System.String" DbType="NChar(300)" CanBeNull="true" />
+      <Column Name="TipoMues" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="Resul" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="Referencia" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_Microorganismo" Member="M_Microorganismo">
+    <Type Name="M_Microorganismo">
+      <Column Name="MicroorganismoID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ConsultaID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Codigo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Muestra" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Tincion" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Colonia" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Nota" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TipoMuestra" Type="System.String" DbType="NChar(25)" CanBeNull="true" />
+      <Column Name="TipoMuestra2" Type="System.String" DbType="NChar(15)" CanBeNull="true" />
+      <Association Name="Consulta_M_Microorganismo" Member="Consulta" ThisKey="ConsultaID" OtherKey="ConsultaID" Type="Consulta" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_Otros" Member="M_Otros">
+    <Type Name="M_Otros">
+      <Column Name="M_OtrosID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Marcador" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Resultado" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Codigo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Valor_Ref" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ConsultaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CuadernoID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Intervalo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Unidad" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_Sanguinea" Member="M_Sanguinea">
+    <Type Name="M_Sanguinea">
+      <Column Name="SanguineaID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Valor" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Modulo" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="SubCategoriaID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ConsultaID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Consulta_M_Sanguinea" Member="Consulta" ThisKey="ConsultaID" OtherKey="ConsultaID" Type="Consulta" IsForeignKey="true" />
+      <Association Name="SubCategoria_M_Sanguinea" Member="SubCategoria" ThisKey="SubCategoriaID" OtherKey="SubCategoriaID" Type="SubCategoria" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.M_Uroanalisis" Member="M_Uroanalisis">
+    <Type Name="M_Uroanalisis">
+      <Column Name="UroanalisisID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Marcador" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Resultado" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Valor_Ref" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ConsultaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.perPersona" Member="perPersona">
+    <Type Name="perPersona">
+      <Column Name="pperCodPer" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="pempCodEmp" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="pperIdePer" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="pperNombre" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="pperPatern" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="pperMatern" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ptidCodTid" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="pperDocIde" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="pperTelDom" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="pperTelCel" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="pperFecNac" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="pperEdadpe" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="pperSexope" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="pperEstCiv" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="pperEmaill" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="pperDirecc" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="plugCodLug" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="pproCodPro" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="pperFecIng" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="pperSegCns" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="pperCatego" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="pperSubNat" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="pperMonNat" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="pperSubLac" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="pperMonLac" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="pperFecVac" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="pperDiaFal" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="pperNroCta" Type="System.String" DbType="VarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="pperDesCta" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="pperNroMat" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="pperEspMed" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="pperSwMedi" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="pperMatCol" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="pperNroNua" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="pafpCodAfp" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="pperExtVig" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="pperCodBar" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="per_FechaSedes" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="lugarexpedicion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Reservas" Member="Reservas">
+    <Type Name="Reservas">
+      <Column Name="ReservaID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FechaRegistro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FechaReserva" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="HoraReserva" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NFicha" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HistoriaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Paciente" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="EspecialidadID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Especialidad" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="MedicoID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Medico" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SE_HC" Member="SE_HC">
+    <Type Name="SE_HC">
+      <Column Name="Emp_Codigo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HCL_CODIGO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HCL_FECHA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="HCL_APPAT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HCL_APMAT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HCL_NOMBRE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HCL_NUMCI" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HCL_SEXO" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="HCL_FECNAC" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DEP_CODIGO_RES" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PRO_CODIGO_RES" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MUN_CODIGO_RES" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HCL_ESTCIV" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="HCL_DIRECC" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="HCL_TELDOM" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PProCodPro" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HCL_LUGTRA" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HCL_DIRTRA" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="HCL_TELTRA" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="HCL_NOMFAM" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HCL_TELFAM" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="HCL_NOMPAD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HCL_NOMMAD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HCL_CodCSB" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="HCL_CodSegSoc" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="HCL_CODFAM" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DEP_CODIGO_LN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HCL_CODMEDICO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="zon_codigo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HCL_USUMOD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HCL_FECMOD" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DEP_CODIGO_NAC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PRO_CODIGO_NAC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MUN_CODIGO_NAC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="hc_alfa" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="hc_NivelEstudio" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HCL_SUMI" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="HCL_SUMI_FECHA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="HCL_ESTADO" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="HCL_TIPODOC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="hcl_migrado" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="af_codigo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="af_mun_cod" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="fa_codificacion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="hcl_Fum" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="hcl_NroEmbarazo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idioma" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idiomamaterno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="autopertenencia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="lugarexpedicion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Solicitud" Member="Solicitud">
+    <Type Name="Solicitud">
+      <Column Name="SolicitudID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Total" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SubCategoria" Member="SubCategoria">
+    <Type Name="SubCategoria">
+      <Column Name="SubCategoriaID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Descripcion" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CategoriaID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Codigo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ModuloN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="SubCategoria_M_Sanguinea" Member="M_Sanguinea" ThisKey="SubCategoriaID" OtherKey="SubCategoriaID" Type="M_Sanguinea" />
+      <Association Name="Categoria_SubCategoria" Member="Categoria" ThisKey="CategoriaID" OtherKey="CategoriaID" Type="Categoria" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_Lepra" Member="T_Lepra">
+    <Type Name="T_Lepra">
+      <Column Name="LepraID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ConsultaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Resultado" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_MarcadorTumoral" Member="T_MarcadorTumoral">
+    <Type Name="T_MarcadorTumoral">
+      <Column Name="Marcador_TumoralID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Marcador" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Resultado" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Val_Ref" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ConsultaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Intervalo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Unidad" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_Micologia" Member="T_Micologia">
+    <Type Name="T_Micologia">
+      <Column Name="MicologiaID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ConsultaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Muestra" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Cultivo" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="MicologicoDirecto" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="TintaChina" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Observacion" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Usuario" Member="Usuario">
+    <Type Name="Usuario">
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Usuario" Member="Usuario1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Apellido" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Usado" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Tipo" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Association Name="Usuario_Accion_Usuario" Member="Accion_Usuario" ThisKey="UsuarioID" OtherKey="UsuarioID" Type="Accion_Usuario" />
+      <Association Name="Usuario_Bioquimico" Member="Bioquimico" ThisKey="UsuarioID" OtherKey="UsuarioID" Type="Bioquimico" />
+      <Association Name="Usuario_Consulta" Member="Consulta" ThisKey="UsuarioID" OtherKey="UsuarioID" Type="Consulta" />
+      <Association Name="Usuario_Historial_Temporal" Member="Historial_Temporal" ThisKey="UsuarioID" OtherKey="UsuarioID" Type="Historial_Temporal" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Variable_Consulta" Member="Variable_Consulta">
+    <Type Name="Variable_Consulta">
+      <Column Name="Variable_ConsultaID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="VariableID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Consulta_LaboratorioID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Fecha" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UsuarioID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CuadernoID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="N_Consulta" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Consulta_Laboratorio_Variable_Consulta" Member="Consulta_Laboratorio" ThisKey="Consulta_LaboratorioID" OtherKey="Consulta_LaboratorioID" Type="Consulta_Laboratorio" IsForeignKey="true" />
+      <Association Name="Variables_Variable_Consulta" Member="Variables" ThisKey="VariableID" OtherKey="VariableID" Type="Variables" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Variables" Member="Variables">
+    <Type Name="Variables">
+      <Column Name="VariableID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Codigo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="CuadernoID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Observacion" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Association Name="Variables_Variable_Consulta" Member="Variable_Consulta" ThisKey="VariableID" OtherKey="VariableID" Type="Variable_Consulta" />
+      <Association Name="Cuadernos_Variables" Member="Cuadernos" ThisKey="CuadernoID" OtherKey="CuadernoID" Type="Cuadernos" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Variables_Cristal" Member="Variables_Cristal">
+    <Type Name="Variables_Cristal">
+      <Column Name="variable_cristal" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Codigo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nombre" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.GetHistorias" Method="GetHistorias">
+    <Parameter Name="s_auditoria" Type="System.String" DbType="VarChar(8000)" />
+    <Parameter Name="i_operacion" Type="System.Char" DbType="Char(1)" />
+    <Parameter Name="i_Emp_Codigo" Type="System.Int32" DbType="Int" />
+    <Parameter Name="i_HCL_CODIGO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="i_HCL_CodCSB" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="i_HCL_NUMCI" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="i_HCL_TIPODOC" Type="System.Int32" DbType="Int" />
+    <Parameter Name="i_HCL_APPAT" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="i_HCL_APMAT" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="i_HCL_NOMBRE" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="o_numerror" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="i_LugarExpedicion" Type="System.Int32" DbType="Int" />
+    <ElementType Name="GetHistoriasResult">
+      <Column Name="HC" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pat" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="mat" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Nom" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Sumi" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="docid" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="tid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="fnac" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="padre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="madre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="direc" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="fecmod" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="sexo" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="lugexp" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="obs" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

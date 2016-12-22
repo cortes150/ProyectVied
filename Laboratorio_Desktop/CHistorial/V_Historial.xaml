@@ -1,0 +1,62 @@
+﻿<Window x:Class="Laboratorio_Desktop.CHistorial.V_Historial"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Historia Clínica" Icon="/Laboratorio_Desktop;component/Images/iconos/histo.png" Height="507" Width="539" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Historia clínica" FontSize="16" FontWeight="Bold" Foreground="#FF56A6E8" Height="37" HorizontalAlignment="Left" Margin="10,10,0,0" Name="label2" VerticalAlignment="Top" Width="440" />
+        <Label Content="Ciudad:" Height="28" HorizontalAlignment="Left" Margin="96,328,0,0" Name="label3" VerticalAlignment="Top" />
+        <Label Content="Departamento:" Height="28" HorizontalAlignment="Left" Margin="57,302,0,0" Name="label5" VerticalAlignment="Top" />
+        <Button Content="Guardar" Height="28" HorizontalAlignment="Left" Margin="362,346,0,0" Name="bt_Guardar" VerticalAlignment="Top" Width="80" Click="bt_Guardar_Click" TabIndex="13" FontWeight="Bold" />
+        <Label Content="Telefono:" Height="28" HorizontalAlignment="Left" Margin="87,392,0,0" Name="label10" VerticalAlignment="Top" />
+        <Label Content="Estado Civil:" Height="28" HorizontalAlignment="Left" Margin="73,274,0,0" Name="label11" VerticalAlignment="Top" />
+        <Label Content="Dirección:" Height="28" HorizontalAlignment="Left" Margin="84,358,0,0" Name="label13" VerticalAlignment="Top" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="152,274,0,0" Name="cb_EstadoC" VerticalAlignment="Top" Width="120" TabIndex="7">
+            <ComboBoxItem Content="No Especificado" IsSelected="True" />
+            <ComboBoxItem Content="Casado" />
+            <ComboBoxItem Content="Soltero" />
+            <ComboBoxItem Content="Divorciado" />
+            <ComboBoxItem Content="Viudo" />
+        </ComboBox>
+        <TextBox Height="23" MaxLength="50" HorizontalAlignment="Left" Margin="152,331,0,0" Name="tb_Ciudad" VerticalAlignment="Top" Width="120" TabIndex="9" />
+        <TextBox Height="23" MaxLength="50" HorizontalAlignment="Left" Margin="152,360,0,0" Name="tb_Direccion" VerticalAlignment="Top" Width="120" TabIndex="10" />
+        <TextBox Height="23" MaxLength="50" HorizontalAlignment="Left" Margin="152,392,0,0" Name="tb_Telefono" VerticalAlignment="Top" Width="120" TabIndex="11" />
+        <GroupBox Header="Campos Obligatorios" Height="222" HorizontalAlignment="Left" Margin="18,46,0,0" Name="groupBox1" VerticalAlignment="Top" Width="493" FontWeight="SemiBold" BorderThickness="5">
+            <Grid>
+                <Label Content="Nº:" Height="28" HorizontalAlignment="Left" Margin="96,10,0,0" Name="label1" VerticalAlignment="Top" />
+                <Label Content="Cédula de Identidad:" Height="28" HorizontalAlignment="Left" Margin="1,131,0,0" Name="label4" VerticalAlignment="Top" />
+                <Label Content="Apellido Materno:" Height="28" HorizontalAlignment="Left" Margin="16,102,0,0" Name="label6" VerticalAlignment="Top" />
+                <Label Content="Apellido Paterno:" Height="28" HorizontalAlignment="Left" Margin="20,73,0,0" Name="label7" VerticalAlignment="Top" />
+                <Label Content="Nombre:" Height="28" HorizontalAlignment="Left" Margin="67,44,0,0" Name="label8" VerticalAlignment="Top" />
+                <Label Content="Fecha de Nacimiento:" Height="28" HorizontalAlignment="Left" Margin="316,5,0,0" Name="label12" VerticalAlignment="Top" />
+                <Label Content="Género:" Height="28" HorizontalAlignment="Left" Margin="72,161,0,0" Name="label14" VerticalAlignment="Top" />
+                <TextBox Height="23" MaxLength="15" HorizontalAlignment="Left" KeyDown="tb_N_KeyDown_1" Margin="129,10,0,0" Name="tb_N" VerticalAlignment="Top" Width="62" IsEnabled="False" />
+                <TextBox Height="23"  HorizontalAlignment="Left" Margin="129,46,0,0" Name="tb_Nombre" VerticalAlignment="Top" Width="120" TabIndex="1" MaxLength="50" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="129,78,0,0" Name="tb_ApellidoP" VerticalAlignment="Top" Width="120" MaxLength="50" TabIndex="2" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="129,107,0,0" Name="tb_ApellidoM" VerticalAlignment="Top" Width="120" TabIndex="3" MaxLength="50" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="129,136,0,0" Name="tb_Cedula" VerticalAlignment="Top" Width="120" MaxLength="50" TabIndex="4" />
+                <ComboBox Height="23" HorizontalAlignment="Left" Margin="129,165,0,0" Name="cb_Sexo" VerticalAlignment="Top" Width="120" TabIndex="5">
+                    <ComboBoxItem Content="Masculino " IsSelected="True" />
+                    <ComboBoxItem Content="Femenino  " />
+                </ComboBox>
+                <Calendar Height="170" HorizontalAlignment="Left" Margin="285,30,0,0" Name="cld_Nacimiento" VerticalAlignment="Top" Width="180" SelectionMode="SingleDate" TabIndex="6" />
+            </Grid>
+        </GroupBox>
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="152,302,0,0" Name="cb_Departamento" VerticalAlignment="Top" Width="120" TabIndex="8">
+            <ComboBoxItem Content="No Especificado" IsSelected="True" />
+            <ComboBoxItem Content="Cochabamba" />
+            <ComboBoxItem Content="Oruro" />
+            <ComboBoxItem Content="Pando" />
+            <ComboBoxItem Content="Potosi" />
+            <ComboBoxItem Content="Tarija" />
+            <ComboBoxItem />
+            <ComboBoxItem Content="Santa Cruz" />
+            <ComboBoxItem Content="La Paz" />
+            <ComboBoxItem Content="Beni" />
+            <ComboBoxItem Content="Chuquisaca" />
+        </ComboBox>
+        <Label Content="Celular:" Height="28" HorizontalAlignment="Left" Margin="97,421,0,0" Name="label9" VerticalAlignment="Top" />
+        <TextBox Height="23" MaxLength="50" HorizontalAlignment="Left" Margin="153,421,0,0" Name="tb_Celular" VerticalAlignment="Top" Width="120" TabIndex="12" />
+        <Image Height="80" x:Name="image1" Stretch="Fill" Source="/Laboratorio_Desktop;component/Images/iconos/histo.png" HorizontalAlignment="Right" Width="99" VerticalAlignment="Top" Margin="0,0,-18,0" />
+        <Button Content="Editar" Name="bt_Editar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="76" Margin="221,73,0,0" Click="bt_Editar_Click"/>
+    </Grid>
+</Window>

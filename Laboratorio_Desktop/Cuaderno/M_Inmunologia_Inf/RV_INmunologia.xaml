@@ -1,0 +1,7 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Viewer="clr-namespace:SAPBusinessObjects.WPF.Viewer;assembly=SAPBusinessObjects.WPF.Viewer" x:Class="Laboratorio_Desktop.Cuaderno.M_Inmunologia_Inf.RV_INmunologia"
+        Title="RV_INmunologia" Height="525" Width="1087">
+    <Viewer:CrystalReportsViewer x:Name="CristalReport" HorizontalAlignment="Left" Height="495" VerticalAlignment="Top" Width="1077" Loaded="CristalReport_Loaded"/>
+</Window>

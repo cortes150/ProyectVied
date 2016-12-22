@@ -1,0 +1,39 @@
+A:\VAIXS\Proyectos\2014-B\Laboratorio Hospital Viedma\App\Laboratorio_Desktop\Laboratorio.Class\bin\Release\Laboratorio.Class.dll
+A:\VAIXS\Proyectos\2014-B\Laboratorio Hospital Viedma\App\Laboratorio_Desktop\Laboratorio.Class\bin\Release\Laboratorio.Class.pdb
+A:\VAIXS\Proyectos\2014-B\Laboratorio Hospital Viedma\App\Laboratorio_Desktop\Laboratorio.Class\obj\Release\Laboratorio.Class.dll
+A:\VAIXS\Proyectos\2014-B\Laboratorio Hospital Viedma\App\Laboratorio_Desktop\Laboratorio.Class\obj\Release\Laboratorio.Class.pdb
+A:\Bicho DCSoft!\Vaixs\Proyectos\2014-B\Laboratorio Hospital Viedma\App\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\bin\Release\Laboratorio.Class.dll
+A:\Bicho DCSoft!\Vaixs\Proyectos\2014-B\Laboratorio Hospital Viedma\App\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\bin\Release\Laboratorio.Class.pdb
+A:\Bicho DCSoft!\Vaixs\Proyectos\2014-B\Laboratorio Hospital Viedma\App\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\obj\Release\Laboratorio.Class.csprojResolveAssemblyReference.cache
+A:\Bicho DCSoft!\Vaixs\Proyectos\2014-B\Laboratorio Hospital Viedma\App\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\obj\Release\Laboratorio.Class.dll
+A:\Bicho DCSoft!\Vaixs\Proyectos\2014-B\Laboratorio Hospital Viedma\App\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\obj\Release\Laboratorio.Class.pdb
+D:\Sistemitas\Laboratorio\15.06.15\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\bin\Release\Laboratorio.Class.dll
+D:\Sistemitas\Laboratorio\15.06.15\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\bin\Release\Laboratorio.Class.pdb
+D:\Sistemitas\Laboratorio\15.06.15\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\obj\Release\Laboratorio.Class.csprojResolveAssemblyReference.cache
+D:\Sistemitas\Laboratorio\15.06.15\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\obj\Release\Laboratorio.Class.dll
+D:\Sistemitas\Laboratorio\15.06.15\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\obj\Release\Laboratorio.Class.pdb
+C:\Users\Administrador\Desktop\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\bin\Release\Laboratorio.Class.dll
+C:\Users\Administrador\Desktop\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\bin\Release\Laboratorio.Class.pdb
+C:\Users\Administrador\Desktop\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\obj\Release\Laboratorio.Class.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Desktop\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\obj\Release\Laboratorio.Class.dll
+C:\Users\Administrador\Desktop\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\obj\Release\Laboratorio.Class.pdb
+D:\para proyecto vietma\proyectos\Alex 03062016\Laboratorio DC!\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\bin\Release\Laboratorio.Class.dll
+D:\para proyecto vietma\proyectos\Alex 03062016\Laboratorio DC!\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\bin\Release\Laboratorio.Class.pdb
+D:\para proyecto vietma\proyectos\Alex 03062016\Laboratorio DC!\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\obj\Release\Laboratorio.Class.csprojResolveAssemblyReference.cache
+D:\para proyecto vietma\proyectos\Alex 03062016\Laboratorio DC!\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\obj\Release\Laboratorio.Class.dll
+D:\para proyecto vietma\proyectos\Alex 03062016\Laboratorio DC!\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\obj\Release\Laboratorio.Class.pdb
+C:\Users\USUARIO\Desktop\Alex 13072016 sevidor local\Laboratorio DC!\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\bin\Release\Laboratorio.Class.dll
+C:\Users\USUARIO\Desktop\Alex 13072016 sevidor local\Laboratorio DC!\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\bin\Release\Laboratorio.Class.pdb
+C:\Users\USUARIO\Desktop\Alex 13072016 sevidor local\Laboratorio DC!\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\obj\Release\Laboratorio.Class.csprojResolveAssemblyReference.cache
+C:\Users\USUARIO\Desktop\Alex 13072016 sevidor local\Laboratorio DC!\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\obj\Release\Laboratorio.Class.dll
+C:\Users\USUARIO\Desktop\Alex 13072016 sevidor local\Laboratorio DC!\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\obj\Release\Laboratorio.Class.pdb
+C:\Users\alejandro\Desktop\Alex 150816 sevidor local\Laboratorio DC!\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\bin\Release\Laboratorio.Class.dll
+C:\Users\alejandro\Desktop\Alex 150816 sevidor local\Laboratorio DC!\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\bin\Release\Laboratorio.Class.pdb
+C:\Users\alejandro\Desktop\Alex 150816 sevidor local\Laboratorio DC!\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\obj\Release\Laboratorio.Class.csprojResolveAssemblyReference.cache
+C:\Users\alejandro\Desktop\Alex 150816 sevidor local\Laboratorio DC!\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\obj\Release\Laboratorio.Class.dll
+C:\Users\alejandro\Desktop\Alex 150816 sevidor local\Laboratorio DC!\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\obj\Release\Laboratorio.Class.pdb
+C:\Users\SISTEMAS\Desktop\Alex 210916 sevidor local\Laboratorio DC!\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\bin\Release\Laboratorio.Class.dll
+C:\Users\SISTEMAS\Desktop\Alex 210916 sevidor local\Laboratorio DC!\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\bin\Release\Laboratorio.Class.pdb
+C:\Users\SISTEMAS\Desktop\Alex 210916 sevidor local\Laboratorio DC!\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\obj\Release\Laboratorio.Class.csprojResolveAssemblyReference.cache
+C:\Users\SISTEMAS\Desktop\Alex 210916 sevidor local\Laboratorio DC!\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\obj\Release\Laboratorio.Class.dll
+C:\Users\SISTEMAS\Desktop\Alex 210916 sevidor local\Laboratorio DC!\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\obj\Release\Laboratorio.Class.pdb

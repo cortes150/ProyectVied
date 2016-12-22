@@ -1,0 +1,30 @@
+﻿<Page x:Class="Laboratorio_Desktop.P_Ficha"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="636" d:DesignWidth="879"
+	Title="P_Ficha">
+    <Grid Margin="1,0,-1,0">
+        <Border BorderBrush="Silver" BorderThickness="1" Height="58" Margin="0,58,0,0" Name="border1" VerticalAlignment="Top"></Border>
+        <Border BorderBrush="Silver" BorderThickness="1" Height="135" Name="border2" Margin="2,122,0,0" HorizontalAlignment="Left" Width="294" VerticalAlignment="Top" />
+        <Label Content="Cuadernos asignados" FontSize="25" FontWeight="Bold" Foreground="#FF56A6E8" Height="47" HorizontalAlignment="Left" Margin="10,10,0,0" Name="label2" VerticalAlignment="Top" Width="440" />
+        <Label FontSize="16" FontStyle="Normal" FontWeight="Normal" Height="41" HorizontalAlignment="Left" Margin="92,63,0,0" Name="lb_Paciente" VerticalAlignment="Top" Width="731" />
+        <Label Content="Historial:" FontSize="13" FontWeight="Bold" Height="26" HorizontalAlignment="Left" Margin="12,67,0,0" Name="label3" Width="140" VerticalAlignment="Top" />
+        <ListBox HorizontalAlignment="Left" Margin="4,304,0,0" Name="lbox_Cuadernos" Width="292" MouseDoubleClick="lbox_Cuadernos_MouseDoubleClick" Height="323" VerticalAlignment="Top" />
+        
+        <Label Content="Nº de Reg.:" Height="28" HorizontalAlignment="Left" Margin="5,137,0,0" Name="label1" VerticalAlignment="Top" />
+        <Label Content="Médico:" Height="28" HorizontalAlignment="Left" Margin="4,165,0,0" Name="label4" VerticalAlignment="Top" />
+        <Label Content="Usuario:" Height="28" HorizontalAlignment="Left" Margin="4,193,0,0" Name="label5" VerticalAlignment="Top" />
+        <Label Content="Label" Height="28" HorizontalAlignment="Left" Margin="76,137,0,0" Name="lb_Consulta" VerticalAlignment="Top" Width="216" />
+        <Label Content="Label" Height="28" HorizontalAlignment="Left" Margin="52,167,0,0" Name="lb_Medico" VerticalAlignment="Top" Width="244" FontSize="10" />
+        <Label Content="Label" Height="28" HorizontalAlignment="Left" Margin="52,195,0,0" Name="lb_Usuario" VerticalAlignment="Top" Width="227" FontSize="10" />
+        <Label Content="Fecha:" Height="28" HorizontalAlignment="Left" Margin="4,221,0,0" Name="label6" VerticalAlignment="Top" />
+        <Label Content="Label" FontSize="10" Height="28" HorizontalAlignment="Left" Margin="40,223,0,0" Name="lb_Fecha" VerticalAlignment="Top" Width="227" />
+        <Label Content="Cuadernos" FontSize="13" FontWeight="Bold" Height="26" HorizontalAlignment="Left" Margin="4,273,0,0" Name="label7" Width="86" VerticalAlignment="Top" />
+            <Frame Name="fm_Cuadernos" Margin="315,122,0,0" />
+        <Button Content="Editar" HorizontalAlignment="Left" Margin="217,273,0,0" VerticalAlignment="Top" Width="79" Name="bt_Editar" Click="bt_Editar_Click_1"/>
+        <Button x:Name="Btn_Eliminar" Content="Eliminar Cuaderno" HorizontalAlignment="Left" Margin="107,273,0,0" VerticalAlignment="Top" Width="105" Click="Btn_Eliminar_Click"/>
+    </Grid>
+</Page>

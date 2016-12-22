@@ -1,0 +1,18 @@
+﻿<Page x:Class="Laboratorio_Desktop.P_Consulta"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="636" d:DesignWidth="879"
+	Title="P_Consulta">
+
+    <Grid>
+        <Border BorderBrush="Silver" BorderThickness="1" Height="58" Margin="0,63,0,0" Name="border1" VerticalAlignment="Top" />
+        <Label FontSize="18" FontStyle="Normal" FontWeight="Normal" Height="41" HorizontalAlignment="Left" Margin="92,68,0,0" Name="lb_Paciente" VerticalAlignment="Top" Width="600" />
+        <Label Content="Registros" FontSize="25" FontWeight="Bold" Foreground="#FF56A6E8" Height="47" HorizontalAlignment="Left" Margin="20,10,0,0" Name="label2" VerticalAlignment="Top" Width="440" />
+        <Label Content="Historial:" FontSize="13" FontWeight="Bold" Height="26" HorizontalAlignment="Left" Margin="12,72,0,0" Name="label3" Width="140" VerticalAlignment="Top" />
+        <DataGrid AutoGenerateColumns="True" IsReadOnly="True" SelectionMode="Extended" SelectionUnit="FullRow"  Margin="12,136,12,12" Name="dg_Consultas" MouseDoubleClick="dg_Consultas_MouseDoubleClick" />
+        <Button Content="Crear nuevo registro" Height="37" HorizontalAlignment="Left" Margin="714,12,0,0" Name="bt_NuevaConsulta" VerticalAlignment="Top" Width="150" Click="bt_NuevaConsulta_Click" />
+    </Grid>
+</Page>

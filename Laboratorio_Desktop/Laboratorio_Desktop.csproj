@@ -1,0 +1,821 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A33E272B-157B-490B-BBD9-2E377CC43BCE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Laboratorio_Desktop</RootNamespace>
+    <AssemblyName>Laboratorio_Desktop</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="SAPBusinessObjects.WPF.Viewer, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\SAPBusinessObjects.WPF.Viewer.dll</HintPath>
+    </Reference>
+    <Reference Include="SAPBusinessObjects.WPF.ViewerShared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\SAPBusinessObjects.WPF.ViewerShared.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Controls.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\acer\Downloads\System.Windows.Controls.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Asignacion.xaml.cs">
+      <DependentUpon>Asignacion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CBioquimico\V_Bioquimico.xaml.cs">
+      <DependentUpon>V_Bioquimico.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CHistorial\V_Historial.xaml.cs">
+      <DependentUpon>V_Historial.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\Mb_Sanguinea\RC_Sanguineo.cs" />
+    <Compile Include="Cuaderno\Mb_Sanguinea\RV_Sanguinea.xaml.cs">
+      <DependentUpon>RV_Sanguinea.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\Mb_Sanguinea\R_GetSanguineo.cs" />
+    <Compile Include="Cuaderno\M_Histocompatibilidad\RC_Histocompativilidad.cs" />
+    <Compile Include="Cuaderno\M_Histocompatibilidad\RV_Histocomp.xaml.cs">
+      <DependentUpon>RV_Histocomp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\M_Histocompatibilidad\RV_HISTOCOMP_DOS.xaml.cs">
+      <DependentUpon>RV_HISTOCOMP_DOS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\M_Histocompatibilidad\RV_HISTOCOMP_UNO.xaml.cs">
+      <DependentUpon>RV_HISTOCOMP_UNO.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\M_Histocompatibilidad\R_GetHistocompativilidad.cs" />
+    <Compile Include="Cuaderno\M_Inmunologia_Inf\RC_Inmunologia.cs" />
+    <Compile Include="Cuaderno\M_Inmunologia_Inf\RV_INmunologia.xaml.cs">
+      <DependentUpon>RV_INmunologia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\M_Inmunologia_Inf\R_GetInmunologia.cs" />
+    <Compile Include="DBLaboratorio.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBLaboratorio.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DetHormo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DetHormo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InmunoloInf1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InmunoloInf1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="intercambio.cs" />
+    <Compile Include="MarcTumo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MarcTumo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="P_Principal\P_Usuario.xaml.cs">
+      <DependentUpon>P_Usuario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="P_Principal\V_Usuario.xaml.cs">
+      <DependentUpon>V_Usuario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RP_Histocompativilidad.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RP_Histocompativilidad.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RP_Histocompativilidad_dos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RP_Histocompativilidad_dos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RP_Histocompativilidad_uno.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RP_Histocompativilidad_uno.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RP_Sanguinea.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RP_Sanguinea.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="R_MicrobioNeg.cs">
+      <DependentUpon>R_MicrobioNeg.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="R_Microbio.cs">
+      <DependentUpon>R_Microbio.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="R_Micolog.cs">
+      <DependentUpon>R_Micolog.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="R_Lepr.cs">
+      <DependentUpon>R_Lepr.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Cuaderno\M_Lepra\P_Lepra.xaml.cs">
+      <DependentUpon>P_Lepra.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\M_Lepra\RC_Lepra.cs" />
+    <Compile Include="Cuaderno\M_Lepra\RV_Lepra.xaml.cs">
+      <DependentUpon>RV_Lepra.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\M_Lepra\R_GetLepra.cs" />
+    <Compile Include="Cuaderno\M_Otros\RC_Inmunoglobulina.cs" />
+    <Compile Include="Cuaderno\V_Micologia\P_Micologia.xaml.cs">
+      <DependentUpon>P_Micologia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\V_Micologia\RC_Micologia.cs" />
+    <Compile Include="Cuaderno\V_Micologia\RV_Micologia.xaml.cs">
+      <DependentUpon>RV_Micologia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\V_Micologia\R_GetMicologia.cs" />
+    <Compile Include="R_Inmunog.cs">
+      <DependentUpon>R_Inmunog.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="R_Ferritin.cs">
+      <DependentUpon>R_Ferritin.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Cuaderno\M_Otros\RV_Inmunoglobulina.xaml.cs">
+      <DependentUpon>RV_Inmunoglobulina.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="R_DetH.cs">
+      <DependentUpon>R_DetH.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Cuaderno\M_Otros\P_Inmunoglobulina.xaml.cs">
+      <DependentUpon>P_Inmunoglobulina.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\M_Otros\P_Ferritina.xaml.cs">
+      <DependentUpon>P_Ferritina.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\M_Otros\RC_Ferritina.cs" />
+    <Compile Include="Cuaderno\M_Otros\RV_Ferritina.xaml.cs">
+      <DependentUpon>RV_Ferritina.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\M_Otros\R_Otros.cs" />
+    <Compile Include="Cuaderno\M_Det_Hormonales\P_Hormonales.xaml.cs">
+      <DependentUpon>P_Hormonales.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\M_Det_Hormonales\RC_DetHor.cs" />
+    <Compile Include="Cuaderno\M_Det_Hormonales\RV_DetHormonales.xaml.cs">
+      <DependentUpon>RV_DetHormonales.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\M_Det_Hormonales\R_GetDetHor.cs" />
+    <Compile Include="Cuaderno\M_Electrolitos\P_Electrolitos.xaml.cs">
+      <DependentUpon>P_Electrolitos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\Md_Hematologia\P_Hematologia.xaml.cs">
+      <DependentUpon>P_Hematologia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\M_Histocompatibilidad\P_Histocompatibilidad.xaml.cs">
+      <DependentUpon>P_Histocompatibilidad.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\M_Inmunocromatografia\P_Inmunocromatografia.xaml.cs">
+      <DependentUpon>P_Inmunocromatografia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\M_InmunologiaElisa\P_InmunologiaElisa.xaml.cs">
+      <DependentUpon>P_InmunologiaElisa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\M_Inmunologia_Inf\P_Inmunologia_Inf.xaml.cs">
+      <DependentUpon>P_Inmunologia_Inf.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\M_Liquido_Org\P_Liquido_Org.xaml.cs">
+      <DependentUpon>P_Liquido_Org.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\M_Marcador_Tumoral\P_Marcador_Tum.xaml.cs">
+      <DependentUpon>P_Marcador_Tum.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\M_Marcador_Tumoral\RV_MarcadorTumoral.xaml.cs">
+      <DependentUpon>RV_MarcadorTumoral.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\M_Marcador_Tumoral\R_GetMarTum.cs" />
+    <Compile Include="Cuaderno\M_Microbiologia\Antibiograma.xaml.cs">
+      <DependentUpon>Antibiograma.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\M_Marcador_Tumoral\RC_MarTum.cs" />
+    <Compile Include="Cuaderno\M_Microbiologia\P_Antibiograma.xaml.cs">
+      <DependentUpon>P_Antibiograma.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\M_Microbiologia\P_Microbiologia.xaml.cs">
+      <DependentUpon>P_Microbiologia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\M_Microbiologia\RC_Microbilogia.cs" />
+    <Compile Include="Cuaderno\M_Microbiologia\RV_Microbiologia.xaml.cs">
+      <DependentUpon>RV_Microbiologia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\M_Microbiologia\R_GetMicro.cs" />
+    <Compile Include="Cuaderno\M_Parasitologia\P_Parasitologia.xaml.cs">
+      <DependentUpon>P_Parasitologia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\Mb_Sanguinea\P_Sanguinea.xaml.cs">
+      <DependentUpon>P_Sanguinea.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\M_Serologia\P_Serologia.xaml.cs">
+      <DependentUpon>P_Serologia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cuaderno\M_Uroanalisis\P_Urologia.xaml.cs">
+      <DependentUpon>P_Urologia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Index.xaml.cs">
+      <DependentUpon>Index.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="P_Bioquimicos.xaml.cs">
+      <DependentUpon>P_Bioquimicos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="P_Busqueda.xaml.cs">
+      <DependentUpon>P_Busqueda.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="P_Consulta.xaml.cs">
+      <DependentUpon>P_Consulta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="P_Ficha.xaml.cs">
+      <DependentUpon>P_Ficha.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="P_Medico.xaml.cs">
+      <DependentUpon>P_Medico.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\RC_Reporte.cs" />
+    <Compile Include="Reportes\RV_General.xaml.cs">
+      <DependentUpon>RV_General.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\R_Cuaderno.cs" />
+    <Compile Include="R_General.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>R_General.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="R_MarTum.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>R_MarTum.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="User1.cs" />
+    <Compile Include="V_Fila_Dia.xaml.cs">
+      <DependentUpon>V_Fila_Dia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="V_Medico.xaml.cs">
+      <DependentUpon>V_Medico.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Asignacion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CBioquimico\V_Bioquimico.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CHistorial\V_Historial.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cuaderno\Mb_Sanguinea\RV_Sanguinea.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cuaderno\M_Histocompatibilidad\RV_Histocomp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cuaderno\M_Histocompatibilidad\RV_HISTOCOMP_DOS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cuaderno\M_Histocompatibilidad\RV_HISTOCOMP_UNO.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cuaderno\M_Inmunologia_Inf\RV_INmunologia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cuaderno\M_Lepra\P_Lepra.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Cuaderno\M_Lepra\RV_Lepra.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Cuaderno\M_Otros\RV_Inmunoglobulina.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Cuaderno\M_Otros\P_Inmunoglobulina.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Cuaderno\M_Otros\P_Ferritina.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Cuaderno\M_Otros\RV_Ferritina.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Cuaderno\M_Det_Hormonales\P_Hormonales.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cuaderno\M_Det_Hormonales\RV_DetHormonales.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Cuaderno\M_Electrolitos\P_Electrolitos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cuaderno\Md_Hematologia\P_Hematologia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cuaderno\M_Histocompatibilidad\P_Histocompatibilidad.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cuaderno\M_Inmunocromatografia\P_Inmunocromatografia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cuaderno\M_InmunologiaElisa\P_InmunologiaElisa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cuaderno\M_Inmunologia_Inf\P_Inmunologia_Inf.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cuaderno\M_Liquido_Org\P_Liquido_Org.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cuaderno\M_Marcador_Tumoral\P_Marcador_Tum.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cuaderno\M_Marcador_Tumoral\RV_MarcadorTumoral.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Cuaderno\M_Microbiologia\Antibiograma.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cuaderno\M_Microbiologia\P_Antibiograma.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cuaderno\M_Microbiologia\P_Microbiologia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cuaderno\M_Microbiologia\RV_Microbiologia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cuaderno\M_Parasitologia\P_Parasitologia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cuaderno\Mb_Sanguinea\P_Sanguinea.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cuaderno\M_Serologia\P_Serologia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cuaderno\M_Uroanalisis\P_Urologia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cuaderno\V_Micologia\P_Micologia.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Cuaderno\V_Micologia\RV_Micologia.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Index.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="P_Bioquimicos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="P_Busqueda.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="P_Consulta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="P_Ficha.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="P_Medico.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="P_Principal\P_Usuario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="P_Principal\V_Usuario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Reportes\RV_General.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="V_Fila_Dia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="V_Medico.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="DBLaboratorio.dbml.layout">
+      <DependentUpon>DBLaboratorio.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="DetHormo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DetHormo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InmunoloInf1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InmunoloInf1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarcTumo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MarcTumo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP_Histocompativilidad.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RP_Histocompativilidad.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP_Histocompativilidad_dos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RP_Histocompativilidad_dos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP_Histocompativilidad_uno.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RP_Histocompativilidad_uno.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RP_Sanguinea.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RP_Sanguinea.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R_MicrobioNeg.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>R_MicrobioNeg.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R_Microbio.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>R_Microbio.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R_Micolog.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>R_Micolog.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R_Lepr.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>R_Lepr.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R_Inmunog.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>R_Inmunog.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R_Ferritin.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>R_Ferritin.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R_DetH.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>R_DetH.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R_General.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>R_General.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R_MarTum.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>R_MarTum.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="DBLaboratorio.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DBLaboratorio.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Laboratorio.Class\Laboratorio.Class.csproj">
+      <Project>{78EC3363-7407-41F5-82DA-533FB176D45D}</Project>
+      <Name>Laboratorio.Class</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\LOGOHCVpng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\banner_laboratorio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\banner-servicios.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\doctores-lazaro-banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\laboratorio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\iconos\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\iconos\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Sin título-3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Sin-título-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Sin-título-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Sin-título-51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\iconos\historiales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\iconos\bioquimicos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\iconos\bioquimicows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\iconos\bioqui.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\iconos\solicitudes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\iconos\solicitud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\iconos\medico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\iconos\reporte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\iconos\usuarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\iconos\histo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\iconos\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\1353183085_save.png" />
+    <Resource Include="Images\add.png" />
+    <Resource Include="Images\Casa&amp;Ideas-icono.png" />
+    <Resource Include="Images\copy.png" />
+    <Resource Include="Images\cut.png" />
+    <Resource Include="Images\format_painter.png" />
+    <Resource Include="Images\go-next.png" />
+    <Resource Include="Images\go-previous.png" />
+    <Resource Include="Images\help.png" />
+    <Resource Include="Images\home.png" />
+    <Resource Include="Images\Logo-Casas&amp;Ideas.png" />
+    <Resource Include="Images\options.png" />
+    <Resource Include="Images\paste.png" />
+    <Resource Include="Images\personal.png" />
+    <Resource Include="Images\quit.png" />
+    <Resource Include="Images\redo.png" />
+    <Resource Include="Images\save.png" />
+    <Resource Include="Images\sofa-cuero-3.png" />
+    <Resource Include="Images\undo.png" />
+    <Resource Include="Images\XMLFile1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icono.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icono.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\inicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Medicos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\LOGOHCVpng - copia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Reportes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Solicitudes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bioquimicos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\iconos\soli.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\iconos\med.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\iconos\rep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\iconos\bio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.4.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 4.0 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

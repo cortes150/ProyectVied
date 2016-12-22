@@ -1,0 +1,103 @@
+﻿<Page x:Class="Laboratorio_Desktop.Asignacion"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" Title="Asignacion" d:DesignWidth="879" Loaded="Page_Loaded" Height="703.164">
+
+    <Grid Margin="0,0,0,10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="292*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Historial:" FontSize="13" FontWeight="Bold" Height="26" Margin="20,63,0,0" Name="label5" HorizontalAlignment="Left" Width="74" VerticalAlignment="Top" Grid.ColumnSpan="2" />
+        <Label FontSize="18" FontStyle="Normal" FontWeight="Normal" Height="41" HorizontalAlignment="Left" Margin="100,61,0,0" Name="lb_Paciente" VerticalAlignment="Top" Width="684" Grid.ColumnSpan="2" />
+        <ComboBox Height="23" HorizontalAlignment="Left" IsEditable="True" Margin="452,152,0,0" Name="dl_Medicos" VerticalAlignment="Top" Width="333" TabIndex="5" SelectionChanged="dl_Medicos_SelectionChanged" Grid.ColumnSpan="2" />
+        <Label Content="Asignación de laboratorios" FontSize="25" FontWeight="Bold" Foreground="#FF56A6E8" Height="47" HorizontalAlignment="Left" Margin="10,10,0,0" Name="label2" VerticalAlignment="Top" Width="440" Grid.ColumnSpan="2" />
+        <Label Content="Médico:" FontSize="13" FontWeight="Bold" Height="26" HorizontalAlignment="Left" Margin="21,150,0,0" Name="label1" VerticalAlignment="Top" Width="85" Grid.ColumnSpan="2" />
+        <DataGrid Name="dg_Asignacion" ItemsSource="{Binding}" AutoGenerateColumns="False" Margin="157,280,172,0" Height="294" VerticalAlignment="Top" Grid.ColumnSpan="2" TabIndex="8">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Codigo}" Width="60" Header="Código"/>
+                <DataGridTextColumn Binding="{Binding Nombre}" Width="250"  Header="Nombre de la variable"/>
+                <DataGridCheckBoxColumn Binding="{Binding Asignado}" Header="Seccionar"/>
+                <DataGridTextColumn Binding="{Binding Observacion}" Width="250" Header="Observación"/>
+                <DataGridTextColumn Binding="{Binding VariableID}" Visibility="Hidden" />
+            </DataGrid.Columns>
+            <DataGrid.GroupStyle>
+                <GroupStyle>
+                    <GroupStyle.HeaderTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Text="{Binding Path=Categoria}" FontWeight="Bold" Padding="3"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </GroupStyle.HeaderTemplate>
+                    <GroupStyle.ContainerStyle>
+                        <Style TargetType="{x:Type GroupItem}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type GroupItem}">
+                                        <Expander>
+                                            <Expander.Header>
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock Text="{Binding Path=Name}" />
+                                                    <TextBlock Text="{Binding Path=ItemCount}" Margin="8,0,4,0"/>
+                                                    <TextBlock Text="Elemento(s)"/>
+
+                                                </StackPanel>
+                                            </Expander.Header>
+                                            <ItemsPresenter />
+                                        </Expander>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </GroupStyle.ContainerStyle>
+                </GroupStyle>
+            </DataGrid.GroupStyle>
+        </DataGrid>
+        <Button Content="Guardar" FontSize="18" FontWeight="Bold" Height="44" Margin="200,581,219,0" Name="bt_Asignar" VerticalAlignment="Top" Click="bt_Asignar_Click_1" Grid.ColumnSpan="2" TabIndex="9" />
+        <ComboBox Height="23" HorizontalAlignment="Left" IsEditable="False" Margin="101,194,0,0" Name="cb_Solicitud" VerticalAlignment="Top" Width="296" TabIndex="6" Grid.ColumnSpan="2" />
+        <Label Content="Servicio:" FontSize="13" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="20,189,0,0" Name="label3" VerticalAlignment="Top" Width="86" Grid.ColumnSpan="2" />
+        <ComboBox Height="23" HorizontalAlignment="Left" IsEditable="False" Margin="489,194,0,0" Name="cb_Paciente" VerticalAlignment="Top" Width="296" SelectionChanged="cb_Paciente_SelectionChanged"  TabIndex="7" Grid.ColumnSpan="2" MouseLeftButtonUp="cb_Paciente_MouseUp">
+            <ComboBoxItem Content="Institucional" IsSelected="True" />
+            <ComboBoxItem Content="Convenio" />
+            <ComboBoxItem Content="Particular" />
+        </ComboBox>
+        <Label Content="Paciente:" FontSize="13" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="408,189,0,0" Name="label4" VerticalAlignment="Top" Width="86" Grid.ColumnSpan="2" />
+        <ComboBox Height="23" HorizontalAlignment="Left" IsEditable="False" Margin="488,233,0,0" Name="cb_Convenio" VerticalAlignment="Top" Width="296" Visibility="Hidden" TabIndex="5" Grid.ColumnSpan="2">
+            <ComboBoxItem Content="SIS-Adulto" IsSelected="True" />
+            <ComboBoxItem Content="SIS-SUMI" />
+            <ComboBoxItem Content="SIS-Discapacitado" />
+            <ComboBoxItem Content="COSMIL" />
+            <ComboBoxItem Content="MINISTERIO DE GOBIERNO Y PREFE" />
+            <ComboBoxItem Content="PATC-PROGRAMA DE APOYO AL TR" />
+            <ComboBoxItem Content="REGIMEN PENITENCIARIO" />
+            <ComboBoxItem Content="SERVICIO DE CAMINOS" />
+            <ComboBoxItem Content="SOAT ADRIATICA" />
+            <ComboBoxItem Content="SOAT BISA SEGUROS" />
+            <ComboBoxItem Content="SOAT BOLIVIA CIACRUZ DE SEGU" />
+            <ComboBoxItem Content="SOAT CREDINFORM" />
+            <ComboBoxItem Content="SOAT FISO" />
+            <ComboBoxItem Content="SOAT FORTALEZA" />
+            <ComboBoxItem Content="SOAT ILLIMANI" />
+            <ComboBoxItem Content="SOAT SEGUROS ALIANZA" />
+            <ComboBoxItem Content="SSU-SEGURO SOCIAL UNIVERSITA" />
+            <ComboBoxItem Content="SUMI ANTES" />
+            <ComboBoxItem Content="PROGRAMA HEMODIALISIS" />
+            <ComboBoxItem Content="MEDICOS SIN FRONTERAS" />
+            <ComboBoxItem Content="SSPAM" />
+            <ComboBoxItem Content="PROGRAMA DISCAPACITADOS" />
+        </ComboBox>
+        <Label Content="Convenio:" FontSize="13" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="408,230,0,0" Name="lb_Convenio" VerticalAlignment="Top" Width="86" Visibility="Hidden" Grid.ColumnSpan="2" />
+        <TextBox Height="23"  Margin="268,152,0,0" Name="tb_Codigo" HorizontalAlignment="Left" Width="111" VerticalAlignment="Top" TabIndex="4" MaxLength="15" TextChanged="tb_Codigo_TextChanged" Grid.ColumnSpan="2" />
+        <Label Content="Nombre:" FontSize="13" FontWeight="Bold" Height="26" HorizontalAlignment="Left" Margin="385,149,0,0" Name="label6" VerticalAlignment="Top" Width="64" Grid.ColumnSpan="2" />
+        <RadioButton Content="Interno" Height="16" HorizontalAlignment="Left" Margin="112,143,0,0" Name="rb_Interno" VerticalAlignment="Top" IsChecked="True" Checked="rb_Interno_Checked" Grid.ColumnSpan="2" TabIndex="2" />
+        <RadioButton Content="Externo" Height="16" HorizontalAlignment="Left" Margin="112,164,0,0" Name="rb_Externo" VerticalAlignment="Top" Checked="rb_Externo_Checked" Grid.ColumnSpan="2" TabIndex="3" />
+        <Label Content="Código:" FontSize="13" FontWeight="Bold" Height="31" HorizontalAlignment="Left" Margin="200,149,0,0" Name="label7" VerticalAlignment="Top" Width="64" Grid.ColumnSpan="2" />
+        <TextBox Height="23" MaxLength="4" Margin="88,109,0,0" x:Name="tb_Registro" HorizontalAlignment="Left" Width="111" VerticalAlignment="Top" TabIndex="1" TextChanged="tb_Codigo_TextChanged" Grid.ColumnSpan="2" />
+        <Label Content="Reg Nº:" FontSize="13" FontWeight="Bold" Height="31" HorizontalAlignment="Left" Margin="21,109,0,0" x:Name="label7_Copy" VerticalAlignment="Top" Width="56" Grid.ColumnSpan="2" />
+        <DatePicker Name="dp_Fecha" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="204,109,0,0" Width="136" Height="22"/>
+    </Grid>
+</Page>

@@ -1,0 +1,9 @@
+﻿<Window x:Class="Laboratorio_Desktop.Cuaderno.M_Microbiologia.RV_General"
+        xmlns:Viewer="clr-namespace:SAPBusinessObjects.WPF.Viewer;assembly=SAPBusinessObjects.WPF.Viewer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Impresión Examen Microbiologia" Height="495.451" Width="874.211" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Viewer:CrystalReportsViewer x:Name="CrystalReportViewer1" Loaded="CrystalReportViewer1_Loaded_1"  />
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laboratorio_Desktop.Cuaderno.Mb_Sanguinea"
+        xmlns:Viewer="clr-namespace:SAPBusinessObjects.WPF.Viewer;assembly=SAPBusinessObjects.WPF.Viewer" x:Class="Laboratorio_Desktop.Cuaderno.Mb_Sanguinea.RV_Sanguinea"
+        mc:Ignorable="d"
+        Title="RV_Sanguinea" Height="558.587" Width="1063.431">
+    <Grid Margin="0,0,2,0">
+
+        <Viewer:CrystalReportsViewer x:Name="CrystalReportViewer1" VerticalAlignment="Top" Height="528" Loaded="CrystalReportsViewer_Loaded"/>
+
+    </Grid>
+</Window>

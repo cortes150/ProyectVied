@@ -1,0 +1,141 @@
+﻿<Page x:Class="Laboratorio_Desktop.Cuaderno.M_Inmunologia_Inf.P_Inmunologia_Inf"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d"
+	Title="P_Inmunologia_Inf" Height="1099.5" Width="682.746">
+
+
+    <Grid HorizontalAlignment="Left" Width="673">
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="92,73,0,0" Name="dl_Bioquimicos" VerticalAlignment="Top" Width="467" IsEditable="True" />
+        <Label Content="Bioquímico:" Height="28" HorizontalAlignment="Left" Margin="1,73,0,0" Name="label4" VerticalAlignment="Top" Width="86" FontWeight="ExtraBold" />
+        <Label Content="Inmunologia Infecciosa" FontSize="20" FontWeight="Bold" Foreground="#FF56A6E8" Height="47" HorizontalAlignment="Left" Margin="10,10,0,0" Name="label2" VerticalAlignment="Top" Width="440" />
+
+
+        <Button Content="Guardar" Height="23" HorizontalAlignment="Left" Margin="268,1045,0,0" Name="bt_Guardar" VerticalAlignment="Top" Width="75" Click="bt_Guardar_Click" />
+        <Label Content="1) Virus Inmunodeficiencia Humana VIH Ag/Ab:" Height="28" HorizontalAlignment="Left" Margin="7,207,0,0" Name="label1" VerticalAlignment="Top" Width="281" FontWeight="Bold" FontSize="12" />
+        <Label Content="2) Hepatitis B anticuerpo de Superficie - HBs Ab:" FontWeight="Bold" FontSize="12" Height="28" HorizontalAlignment="Left" Margin="7,240,0,0" Name="label3" VerticalAlignment="Top" Width="285" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="287,242,0,0" Name="tb_1" VerticalAlignment="Top" Width="136" IsUndoEnabled="True" IsEnabled="False" LostFocus="tb_1_LostFocus" KeyDown="tb_N_KeyDown"  />
+        <Label Content="3) Hepatitis B antígeno de Superficie - HBs Ag:" FontWeight="Bold" FontSize="12" Height="28" HorizontalAlignment="Left" Margin="5,285,0,0" Name="label5" VerticalAlignment="Top" Width="279" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="287,285,0,0" Name="tb_3" VerticalAlignment="Top" Width="136" IsEnabled="False" LostFocus="tb_3_LostFocus" KeyDown="tb_N_KeyDown" />
+        <Label Content="4) Hepatitis B anti core [anti-HBc]:" FontWeight="Bold" FontSize="12" Height="28" HorizontalAlignment="Left" Margin="5,318,0,0" Name="label6" VerticalAlignment="Top" Width="203" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="287,318,0,0" Name="tb_4" VerticalAlignment="Top" Width="136" IsEnabled="False" LostFocus="tb_4_LostFocus" KeyDown="tb_N_KeyDown" />
+        <Label Content="5) Hepatitis A - Ig M:" FontWeight="Bold" FontSize="12" Height="28" HorizontalAlignment="Left" Margin="5,351,0,0" Name="label7" VerticalAlignment="Top" Width="184" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="287,351,0,0" Name="tb_5" VerticalAlignment="Top" Width="136" IsEnabled="False" LostFocus="tb_5_LostFocus" KeyDown="tb_N_KeyDown" />
+        <Label Content="6) Hepatitis C [anti-HCV]:" FontWeight="Bold" FontSize="12" Height="28" HorizontalAlignment="Left" Margin="5,384,0,0" Name="label8" VerticalAlignment="Top" Width="184" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="287,384,0,0" Name="tb_6" VerticalAlignment="Top" Width="136" IsEnabled="False" LostFocus="tb_6_LostFocus" KeyDown="tb_N_KeyDown" />
+        <Label Content="7) Cito Megalovirus Ig M:" FontWeight="Bold" FontSize="12" Height="28" HorizontalAlignment="Left" Margin="5,417,0,0" Name="label9" VerticalAlignment="Top" Width="184" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="287,417,0,0" Name="tb_7" VerticalAlignment="Top" Width="136" IsEnabled="False" LostFocus="tb_7_LostFocus" KeyDown="tb_N_KeyDown" />
+        <Label Content="8) Cito Megalovirus Ig G:" FontWeight="Bold" FontSize="12" Height="28" HorizontalAlignment="Left" Margin="5,450,0,0" Name="label10" VerticalAlignment="Top" Width="184" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="287,450,0,0" Name="tb_8" VerticalAlignment="Top" Width="136" IsEnabled="False" LostFocus="tb_8_LostFocus" KeyDown="tb_N_KeyDown" />
+        <Label Content="9) Chlamydia Trachomatis Ig M:" FontWeight="Bold" FontSize="12" Height="28" HorizontalAlignment="Left" Margin="5,483,0,0" Name="label11" VerticalAlignment="Top" Width="197" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="287,483,0,0" Name="tb_9" VerticalAlignment="Top" Width="136" IsEnabled="False" LostFocus="tb_9_LostFocus" KeyDown="tb_N_KeyDown" />
+        <Label Content="10) Chlamydia Trachomatis Ig G:" FontWeight="Bold" FontSize="12" Height="28" HorizontalAlignment="Left" Margin="5,516,0,0" Name="label12" VerticalAlignment="Top" Width="218" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="287,516,0,0" Name="tb_10" VerticalAlignment="Top" Width="136" IsEnabled="False" LostFocus="tb_10_LostFocus" KeyDown="tb_N_KeyDown" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="287,549,0,0" Name="tb_11" VerticalAlignment="Top" Width="136" IsEnabled="False" LostFocus="tb_11_LostFocus" KeyDown="tb_N_KeyDown" />
+        <Label Content="11) Chagas Elisa Ig G:" FontWeight="Bold" FontSize="12" Height="28" HorizontalAlignment="Left" Margin="5,549,0,0" Name="label16" VerticalAlignment="Top" Width="184" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="287,582,0,0" Name="tb_12" VerticalAlignment="Top" Width="136" IsEnabled="False" LostFocus="tb_12_LostFocus" KeyDown="tb_N_KeyDown" />
+        <Label Content="12) Péptico Cìclico Citrulinado [anti CCP]:" FontWeight="Bold" FontSize="12" Height="28" HorizontalAlignment="Left" Margin="5,582,0,0" Name="label13" VerticalAlignment="Top" Width="248" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="287,615,0,0" Name="tb_13" VerticalAlignment="Top" Width="136" IsEnabled="False" LostFocus="tb_13_LostFocus" KeyDown="tb_N_KeyDown" />
+        <Label Content="13) Entamoeha histolytica en heces: " FontWeight="Bold" FontSize="12" Height="28" HorizontalAlignment="Left" Margin="5,615,0,0" Name="label17" VerticalAlignment="Top" Width="219" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="287,648,0,0" Name="tb_14" VerticalAlignment="Top" Width="136" IsEnabled="False" LostFocus="tb_14_LostFocus" KeyDown="tb_N_KeyDown" />
+        <Label Content="14) Giardia lamblia en heces:" FontWeight="Bold" FontSize="12" Height="28" HorizontalAlignment="Left" Margin="6,648,0,0" Name="label18" VerticalAlignment="Top" Width="184" />
+        <Label Content="Marcador" Height="39" HorizontalAlignment="Left" Margin="78,163,0,0" Name="label19" VerticalAlignment="Top" FontSize="18" />
+        <Label Content="Resultado" FontSize="18" Height="39" HorizontalAlignment="Left" Margin="288,163,0,0" Name="label20" VerticalAlignment="Top" />
+        <Label Content="V. de Ref." FontSize="18" Height="39" HorizontalAlignment="Left" Margin="448,163,0,0" Name="label21" VerticalAlignment="Top" />
+        <Label Content="Observaciones:" Height="28" HorizontalAlignment="Left" Margin="19,924,0,0" Name="label22" VerticalAlignment="Top" />
+        <TextBox Height="100" TextWrapping="Wrap" AcceptsReturn="True" HorizontalAlignment="Left" Margin="120,924,0,0" Name="tb_Observacion" VerticalAlignment="Top" Width="442" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="288,209,0,0" Name="cb_1" VerticalAlignment="Top" Width="135" IsSelected="False" IsEnabled="False">
+            <ComboBoxItem Content="No Reactivo" IsSelected="True" />
+            <ComboBoxItem Content="Reactivo" />
+        </ComboBox>
+        <Label Content="No Reactivo" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="423,207,0,0" Name="lb_1" VerticalAlignment="Top" Width="129" FontSize="11" />
+        <Label Content="Pos > 20 uUI/ml" FontWeight="Bold" FontSize="11" Height="28" HorizontalAlignment="Left" Margin="423,241,0,0" x:Name="lb_2" VerticalAlignment="Top" Width="94" />
+        <Label Content="Neg &lt; 0.9 y pos &gt; 1.0" FontWeight="Bold" HorizontalAlignment="Left" Margin="422,285,0,773" x:Name="lb_4" Width="140" FontSize="11" />
+        <Label Content="Positivo &gt; 0.120" FontWeight="Bold" Height="25" HorizontalAlignment="Left" Margin="423,382,0,0" x:Name="lb_7" VerticalAlignment="Top" Width="128" RenderTransformOrigin="0.729,-0.179" FontSize="11" />
+        <Label Content="Positivo &gt; 0.311" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="423,547,0,0" x:Name="lb_12" VerticalAlignment="Top" Width="128" FontSize="11" />
+        <Label Content="Positivo &gt; 25 U/ml" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="422,580,0,0" x:Name="lb_13" VerticalAlignment="Top" Width="129" FontSize="11" />
+        <Label Content="Positivo &gt; 0.193" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="423,615,0,0" x:Name="lb_14" VerticalAlignment="Top" Width="128" FontSize="11" />
+        <Label Content="Positivo &gt; 0.197" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="423,648,0,0" x:Name="lb_15" VerticalAlignment="Top" Width="128" FontSize="11" />
+        <Label Content="Neg &lt; 0.9 y pos &gt; 1.0" FontWeight="Bold" HorizontalAlignment="Left" Margin="422,318,0,740" x:Name="lb_5" Width="140" FontSize="11" />
+        <Label Content="Neg &lt; 0.9 y pos &gt; 1.1" FontWeight="Bold" HorizontalAlignment="Left" Margin="423,351,0,707" x:Name="lb_6" Width="140" FontSize="11" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="287,681,0,0" Name="tb_15" VerticalAlignment="Top" Width="136" IsEnabled="False" LostFocus="tb_15_LostFocus" KeyDown="tb_N_KeyDown" />
+        <Label Content="15) Toxoplasma gondii Ig M:" FontWeight="Bold" FontSize="12" Height="28" HorizontalAlignment="Left" Margin="5,681,0,0" Name="label27" VerticalAlignment="Top" Width="184" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="287,714,0,0" Name="tb_16" VerticalAlignment="Top" Width="136" IsEnabled="False" LostFocus="tb_16_LostFocus" KeyDown="tb_N_KeyDown" />
+        <Label Content="16) Toxoplasma gondii Ig G:" FontWeight="Bold" FontSize="12" Height="28" HorizontalAlignment="Left" Margin="5,714,0,0" Name="label40" VerticalAlignment="Top" Width="184" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="287,747,0,0" Name="tb_17" VerticalAlignment="Top" Width="136" IsEnabled="False" LostFocus="tb_17_LostFocus" KeyDown="tb_N_KeyDown" />
+        <Label Content="17) Epstein Barr Virus EBV - Ig M:" FontWeight="Bold" FontSize="12" Height="28" HorizontalAlignment="Left" Margin="6,747,0,0" Name="label41" VerticalAlignment="Top" Width="217" />
+        <Label Content="Neg &lt; 0.9 y pos &gt; 1.1" FontWeight="Bold" HorizontalAlignment="Left" Margin="423,417,0,641" x:Name="lb_8" Width="140" FontSize="11" />
+        <Label Content="Neg &lt; 0.9 y pos &gt; 1.1" FontWeight="Bold" HorizontalAlignment="Left" Margin="423,450,0,608" x:Name="lb_9" Width="140" FontSize="11" />
+        <Label Content="Neg &lt; 0.9 y pos &gt; 1.1" FontWeight="Bold" HorizontalAlignment="Left" Margin="423,483,0,575" x:Name="lb_10" Width="140" FontSize="11" />
+        <Label Content="Neg &lt; 0.9 y pos &gt; 1.1" FontWeight="Bold" HorizontalAlignment="Left" Margin="423,516,0,544" x:Name="lb_11" Width="140" FontSize="11" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="287,780,0,0" Name="tb_18" VerticalAlignment="Top" Width="136" IsEnabled="False" LostFocus="tb_18_LostFocus" KeyDown="tb_N_KeyDown" />
+        <Label Content="18) Epstein Barr Virus EBV - Ig G:" FontWeight="Bold" FontSize="12" Height="28" HorizontalAlignment="Left" Margin="5,780,0,0" Name="label44" VerticalAlignment="Top" Width="230" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="287,813,0,0" Name="tb_19" VerticalAlignment="Top" Width="136" IsEnabled="False" LostFocus="tb_19_LostFocus" KeyDown="tb_N_KeyDown" />
+        <Label Content="19) Helicobacter pylori Ig M:" FontWeight="Bold" FontSize="12" Height="28" HorizontalAlignment="Left" Margin="5,813,0,0" Name="label45" VerticalAlignment="Top" Width="184" />
+        <Label Content="Positivo &gt; 40 U/ml" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="422,813,0,0" x:Name="lb_20" VerticalAlignment="Top" Width="129" FontSize="11" />
+        <Label Content="Neg &lt; 0.9 y pos &gt; 1.1" FontWeight="Bold" HorizontalAlignment="Left" Margin="423,681,0,377" x:Name="lb_16" Width="140" FontSize="11" />
+        <Label Content="Neg &lt; 0.9 y pos &gt; 1.1" FontWeight="Bold" HorizontalAlignment="Left" Margin="423,715,0,343" x:Name="lb_17" Width="140" FontSize="11" />
+        <Label Content="Neg &lt; 0.9 y pos &gt; 1.1" FontWeight="Bold" HorizontalAlignment="Left" Margin="423,748,0,312" x:Name="lb_18" Width="140" FontSize="11" />
+        <Label Content="Neg &lt; 0.9 y pos &gt; 1.1" FontWeight="Bold" HorizontalAlignment="Left" Margin="423,779,0,278" x:Name="lb_19" Width="140" FontSize="11" />
+        <Label Content="21) HAI Chagas:" FontWeight="Bold" FontSize="12" Height="28" HorizontalAlignment="Left" Margin="5,880,0,0" Name="label14" VerticalAlignment="Top" Width="184" />
+        <ComboBox Height="23" Name="cb_2" Width="135"  Margin="288,882,0,185" HorizontalAlignment="Left" IsEnabled="False">
+            <ComboBoxItem Content="Negativo" IsSelected="True" />
+            <ComboBoxItem Content="Positivo" />
+        </ComboBox>
+        <Label Content="20) Helicobacter pylori Ig G:" FontWeight="Bold" FontSize="12" Height="28" HorizontalAlignment="Left" Margin="6,847,0,0" x:Name="label45_Copy" VerticalAlignment="Top" Width="184" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="288,846,0,0" x:Name="tb_20" VerticalAlignment="Top" Width="136" IsEnabled="False" LostFocus="tb_20_LostFocus" KeyDown="tb_N_KeyDown" />
+        <Label Content="Positivo &gt; 20 U/ml" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="423,846,0,0" x:Name="lb_21" VerticalAlignment="Top" Width="129" FontSize="11" />
+        <Button Content="Imprimir" x:Name="bt_Imprimir" HorizontalAlignment="Left" Margin="582,21,0,0" VerticalAlignment="Top" TabIndex="29" Width="75" Click="bt_Imprimir_Click"/>
+        <Label Content="Tipo De Muestra:" Height="28" HorizontalAlignment="Left" Margin="2,113,0,0" x:Name="label4_Copy" VerticalAlignment="Top" Width="107" FontWeight="ExtraBold" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="120,115,0,0" x:Name="Dl_TipoMuestra" VerticalAlignment="Top" Width="439" Selector.IsSelected="False" IsEnabled="True">
+            <ComboBoxItem Content="S" IsSelected="True" />
+            <ComboBoxItem Content="Heces" />
+            <ComboBoxItem Content="Orina" />
+            <ComboBoxItem Content="S.H" />
+            <ComboBoxItem Content="S.O" />
+        </ComboBox>
+        <Label x:Name="lblposi2" Content="Posi" HorizontalAlignment="Left" Margin="560,241,0,0" VerticalAlignment="Top" Foreground="Red" IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblnega2" Content="Nega" HorizontalAlignment="Left" Margin="582,241,0,0" VerticalAlignment="Top" Foreground="#FF0CFF00"  IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblposi3" Content="Posi" HorizontalAlignment="Left" Margin="560,282,0,0" VerticalAlignment="Top" Foreground="Red" IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblnega3" Content="Nega" HorizontalAlignment="Left" Margin="584,282,0,0" VerticalAlignment="Top" Foreground="#FF0CFF00"  IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblposi4" Content="Posi" HorizontalAlignment="Left" Margin="562,317,0,0" VerticalAlignment="Top" Foreground="Red" IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblnega4" Content="Nega" HorizontalAlignment="Left" Margin="584,317,0,0" VerticalAlignment="Top" Foreground="#FF0CFF00"  IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblposi5" Content="Posi" HorizontalAlignment="Left" Margin="562,351,0,0" VerticalAlignment="Top" Foreground="Red" IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblnega5" Content="Nega" HorizontalAlignment="Left" Margin="584,351,0,0" VerticalAlignment="Top" Foreground="#FF0CFF00"  IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblposi7" Content="Posi" HorizontalAlignment="Left" Margin="560,417,0,0" VerticalAlignment="Top" Foreground="Red" IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblnega7" Content="Nega" HorizontalAlignment="Left" Margin="582,417,0,0" VerticalAlignment="Top" Foreground="#FF0CFF00"  IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblposi8" Content="Posi" HorizontalAlignment="Left" Margin="560,450,0,0" VerticalAlignment="Top" Foreground="Red" IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblnega8" Content="Nega" HorizontalAlignment="Left" Margin="582,450,0,0" VerticalAlignment="Top" Foreground="#FF0CFF00"  IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblposi9" Content="Posi" HorizontalAlignment="Left" Margin="560,480,0,0" VerticalAlignment="Top" Foreground="Red" IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblnega9" Content="Nega" HorizontalAlignment="Left" Margin="582,480,0,0" VerticalAlignment="Top" Foreground="#FF0CFF00"  IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblposi10" Content="Posi" HorizontalAlignment="Left" Margin="560,515,0,0" VerticalAlignment="Top" Foreground="Red" IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblnega10" Content="Nega" HorizontalAlignment="Left" Margin="582,515,0,0" VerticalAlignment="Top" Foreground="#FF0CFF00"  IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblposi15" Content="Posi" HorizontalAlignment="Left" Margin="551,681,0,0" VerticalAlignment="Top" Foreground="Red" IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblnega15" Content="Nega" HorizontalAlignment="Left" Margin="572,681,0,0" VerticalAlignment="Top" Foreground="#FF0CFF00"  IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblposi16" Content="Posi" HorizontalAlignment="Left" Margin="551,711,0,0" VerticalAlignment="Top" Foreground="Red" IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblnega16" Content="Nega" HorizontalAlignment="Left" Margin="572,711,0,0" VerticalAlignment="Top" Foreground="#FF0CFF00"  IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblposi17" Content="Posi" HorizontalAlignment="Left" Margin="551,747,0,0" VerticalAlignment="Top" Foreground="Red" IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblnega17" Content="Nega" HorizontalAlignment="Left" Margin="572,749,0,0" VerticalAlignment="Top" Foreground="#FF0CFF00"  IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblposi18" Content="Posi" HorizontalAlignment="Left" Margin="551,777,0,0" VerticalAlignment="Top" Foreground="Red" IsHitTestVisible="False" IsEnabled="False" RenderTransformOrigin="0.406,1.885" Visibility="Hidden"/>
+        <Label x:Name="lblnega18" Content="Nega" HorizontalAlignment="Left" Margin="572,777,0,0" VerticalAlignment="Top" Foreground="#FF0CFF00"  IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblposi19" Content="Posi" HorizontalAlignment="Left" Margin="551,812,0,0" VerticalAlignment="Top" Foreground="Red" IsHitTestVisible="False" IsEnabled="False" RenderTransformOrigin="0.406,1.885" Visibility="Hidden"/>
+        <Label x:Name="lblnega19" Content="Nega" HorizontalAlignment="Left" Margin="572,812,0,0" VerticalAlignment="Top" Foreground="#FF0CFF00"  IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblposi20" Content="Posi" HorizontalAlignment="Left" Margin="551,845,0,0" VerticalAlignment="Top" Foreground="Red" IsHitTestVisible="False" IsEnabled="False" RenderTransformOrigin="0.406,1.885" Visibility="Hidden"/>
+        <Label x:Name="lblnega20" Content="Nega" HorizontalAlignment="Left" Margin="572,845,0,0" VerticalAlignment="Top" Foreground="#FF0CFF00"  IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label Content="Negativo" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="428,886,0,0" x:Name="lb_22" VerticalAlignment="Top" Width="129" FontSize="11" />
+        <Label x:Name="lblposi6" Content="Posi" HorizontalAlignment="Left" Margin="563,381,0,0" VerticalAlignment="Top" Foreground="Red" IsHitTestVisible="False" IsEnabled="False" RenderTransformOrigin="0.406,1.885" Visibility="Hidden"/>
+        <Label x:Name="lblnega6" Content="Nega" HorizontalAlignment="Left" Margin="584,381,0,0" VerticalAlignment="Top" Foreground="#FF0CFF00"  IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblposi11" Content="Posi" HorizontalAlignment="Left" Margin="560,546,0,0" VerticalAlignment="Top" Foreground="Red" IsHitTestVisible="False" IsEnabled="False" RenderTransformOrigin="0.406,1.885" Visibility="Hidden"/>
+        <Label x:Name="lblnega11" Content="Nega" HorizontalAlignment="Left" Margin="582,547,0,0" VerticalAlignment="Top" Foreground="#FF0CFF00"  IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblposi12" Content="Posi" HorizontalAlignment="Left" Margin="560,579,0,0" VerticalAlignment="Top" Foreground="Red" IsHitTestVisible="False" IsEnabled="False" RenderTransformOrigin="0.406,1.885" Visibility="Hidden"/>
+        <Label x:Name="lblnega12" Content="Nega" HorizontalAlignment="Left" Margin="582,579,0,0" VerticalAlignment="Top" Foreground="#FF0CFF00"  IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblposi13" Content="Posi" HorizontalAlignment="Left" Margin="560,610,0,0" VerticalAlignment="Top" Foreground="Red" IsHitTestVisible="False" IsEnabled="False" RenderTransformOrigin="0.406,1.885" Visibility="Hidden"/>
+        <Label x:Name="lblnega13" Content="Nega" HorizontalAlignment="Left" Margin="582,610,0,0" VerticalAlignment="Top" Foreground="#FF0CFF00"  IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Label x:Name="lblposi14" Content="Posi" HorizontalAlignment="Left" Margin="560,645,0,0" VerticalAlignment="Top" Foreground="Red" IsHitTestVisible="False" IsEnabled="False" RenderTransformOrigin="0.406,1.885" Visibility="Hidden"/>
+        <Label x:Name="lblnega14" Content="Nega" HorizontalAlignment="Left" Margin="582,645,0,0" VerticalAlignment="Top" Foreground="#FF0CFF00"  IsHitTestVisible="False" IsEnabled="False" Visibility="Hidden"/>
+        <Button Content="Vista Previa" HorizontalAlignment="Left" Margin="492,21,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+
+    </Grid>
+</Page>

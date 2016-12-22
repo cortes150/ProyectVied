@@ -1,0 +1,14 @@
+﻿<Window x:Class="Laboratorio_Desktop.Cuaderno.M_Microbiologia.Antibiograma"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Antibiograma" Height="641.021" Width="612.466" WindowStartupLocation="CenterScreen" >
+    <Grid>
+        <ScrollViewer Margin="0,-4,0,10" HorizontalAlignment="Left" Width="594">
+            
+            <Frame Name="fm_contenido" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Hidden" Width="572" />
+
+        </ScrollViewer>
+        
+
+    </Grid>
+</Window>

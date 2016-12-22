@@ -1,0 +1,55 @@
+﻿<Page x:Class="Laboratorio_Desktop.Cuaderno.M_Inmunocromatografia.P_Inmunocromatografia"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+     d:DesignHeight="683" d:DesignWidth="571"
+	Title="P_Inmunocromatografia">
+
+    <Grid Height="716">
+        <ComboBox Height="23" HorizontalAlignment="Left" IsEditable="True" Margin="88,78,0,0" Name="dl_Bioquimicos" VerticalAlignment="Top" Width="467" />
+        <Label Content="Bioquímico:" FontWeight="ExtraBold" Height="28" HorizontalAlignment="Left" Margin="14,73,0,0" Name="label4" VerticalAlignment="Top" Width="86" />
+        <Label Content="Pruebas rápidas Inmunocromatografía" FontSize="20" FontWeight="Bold" Foreground="#FF56A6E8" Height="47" HorizontalAlignment="Left" Margin="10,10,0,0" Name="label2" VerticalAlignment="Top" Width="440" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="326,137,0,0" Name="comboBox18" VerticalAlignment="Top" Width="73">
+            <ComboBoxItem Content="Negativo" />
+            <ComboBoxItem Content="Positivo" />
+        </ComboBox>
+        <Label Content="HIV I II:" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="191,137,0,554" Name="label43" Width="140" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="326,183,0,0" Name="comboBox1" VerticalAlignment="Top" Width="73">
+            <ComboBoxItem Content="Negativo" />
+            <ComboBoxItem Content="Positivo" />
+        </ComboBox>
+        <Label Content="Cocaina" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="191,183,0,508" Name="label1" Width="140" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="326,228,0,0" Name="comboBox2" VerticalAlignment="Top" Width="73">
+            <ComboBoxItem Content="Negativo" />
+            <ComboBoxItem Content="Positivo" />
+        </ComboBox>
+        <Label Content="Marihuana" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="191,228,0,463" Name="label3" Width="140" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="326,273,0,0" Name="comboBox3" VerticalAlignment="Top" Width="73">
+            <ComboBoxItem Content="Negativo" />
+            <ComboBoxItem Content="Positivo" />
+        </ComboBox>
+        <Label Content="Metanfetaminas" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="191,273,0,418" Name="label5" Width="140" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="326,313,0,0" Name="comboBox4" VerticalAlignment="Top" Width="73">
+            <ComboBoxItem Content="Negativo" />
+            <ComboBoxItem Content="Positivo" />
+        </ComboBox>
+        <Label Content="Opiaceos" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="191,313,0,378" Name="label6" Width="140" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="326,358,0,0" Name="comboBox5" VerticalAlignment="Top" Width="73">
+            <ComboBoxItem Content="Negativo" />
+            <ComboBoxItem Content="Positivo" />
+        </ComboBox>
+        <Label Content="Benzodiacepinas" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="191,358,0,333" Name="label7" Width="140" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="326,450,0,0" Name="comboBox6" VerticalAlignment="Top" Width="73">
+            <ComboBoxItem Content="Negativo" />
+            <ComboBoxItem Content="Positivo" />
+        </ComboBox>
+        <Label Content="Otros" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="191,450,0,241" Name="label8" Width="140" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="326,405,0,0" Name="comboBox7" VerticalAlignment="Top" Width="73">
+            <ComboBoxItem Content="Negativo" />
+            <ComboBoxItem Content="Positivo" />
+        </ComboBox>
+        <Label Content="BHCG Cual. en sangre:" FontWeight="ExtraBold" HorizontalAlignment="Left" Margin="191,405,0,272" Name="label9" Width="140" />
+    </Grid>
+</Page>

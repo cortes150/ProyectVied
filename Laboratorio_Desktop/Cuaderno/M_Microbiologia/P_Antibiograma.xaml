@@ -1,0 +1,93 @@
+﻿<Page x:Class="Laboratorio_Desktop.Cuaderno.M_Microbiologia.P_Antibiograma"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d"
+	Title="P_Antibiograma" Height="1477.121" Width="577.504">
+
+    <Grid Margin="0,0,10,10">
+        <DataGrid HorizontalAlignment="Left" SelectionMode="Single"  ItemsSource="{Binding}" SelectionUnit="Cell"  AutoGenerateColumns="False" AlternatingRowBackground="Cyan" Margin="23,70,0,0" x:Name="dg_Antibiograma" Width="535" FontSize="15" Height="1034" VerticalAlignment="Top">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Nº}" Width="40"  Header="Nº"   IsReadOnly="True"/>
+                <DataGridTextColumn Binding="{Binding ANTIBIOTICOS}" Width="180"  Header="ANTIBIOTICOS" IsReadOnly="True" >
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment"
+    							Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Binding="{Binding S}" Width="95"  Header="S" IsReadOnly="False" >
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment"
+    							Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Binding="{Binding I}" Width="95"  Header="I" IsReadOnly="False" >
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment"
+    							Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+                <DataGridTextColumn Binding="{Binding R}" Width="95"  Header="R" IsReadOnly="False" >
+                    <DataGridTextColumn.HeaderStyle>
+                        <Style TargetType="{x:Type DataGridColumnHeader}">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.HeaderStyle>
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="{x:Type TextBlock}">
+                            <Setter Property="TextAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <Label Content="Observaciones:" Height="28" HorizontalAlignment="Left" Margin="7,1308,0,0" x:Name="label22" VerticalAlignment="Top" FontWeight="Bold" />
+        <TextBox Height="100" TextWrapping="Wrap" AcceptsReturn="True" HorizontalAlignment="Left" Margin="103,1260,0,0" x:Name="tb_Observacion" VerticalAlignment="Top" Width="442" />
+        <Label Content="Nota:" Height="28" HorizontalAlignment="Left" Margin="51,1198,0,0" x:Name="label5" VerticalAlignment="Top" FontWeight="Bold" />
+        <TextBox AcceptsReturn="True" Height="100" HorizontalAlignment="Left" Margin="103,1154,0,0" x:Name="tb_Nota" TextWrapping="Wrap" VerticalAlignment="Top" Width="442" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="123,1126,0,0" x:Name="cb_Nota" VerticalAlignment="Top" Width="120" SelectionChanged="cb_Nota_SelectionChanged" >
+            <ComboBoxItem Content="En blanco" IsSelected="True" />
+            <ComboBoxItem Content="BLEA Alto nivel" />
+            <ComboBoxItem Content="BLEE" />
+            <ComboBoxItem Content="AMP-C Basal" />
+            <ComboBoxItem Content="AMP-C Inducible" />
+            <ComboBoxItem Content="AMP-C de reprimida" />
+            <ComboBoxItem Content="MLSb Inducible" />
+            <ComboBoxItem Content="MLSb Constitutivo" />
+            <ComboBoxItem Content="MLSb E-Flujo" />
+            <ComboBoxItem Content="CEPA 0" />
+            <ComboBoxItem Content="CEPA 1" />
+            <ComboBoxItem Content="CEPA 2" />
+            <ComboBoxItem Content="CEPA 3" />
+            <ComboBoxItem Content="CEPA 4" />
+        </ComboBox>
+        <Button Content="Guardar" Height="33" HorizontalAlignment="Left" Margin="138,1377,0,0" x:Name="bt_Guardar" VerticalAlignment="Top" Width="333" FontSize="16" FontWeight="ExtraBold" Click="bt_Guardar_Click" />
+        <Label Content="Registro Nº:" HorizontalAlignment="Left" Margin="10,24,0,0" VerticalAlignment="Top"/>
+        <Label Content="MICROORGANISMO:" HorizontalAlignment="Left" Margin="180,24,0,0" VerticalAlignment="Top"/>
+        <Label Content="" Name="lb_Numero" FontSize="14" FontWeight="Bold" HorizontalAlignment="Left" Margin="86,21,0,0" VerticalAlignment="Top" Width="77"/>
+        <Label Content="" x:Name="lb_Microorganismo" FontSize="14" FontWeight="Bold" HorizontalAlignment="Left" Margin="300,23,0,0" VerticalAlignment="Top" Width="236"/>
+ 
+    </Grid>
+</Page>

@@ -1,0 +1,11 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Viewer="clr-namespace:SAPBusinessObjects.WPF.Viewer;assembly=SAPBusinessObjects.WPF.Viewer" x:Class="Laboratorio_Desktop.Cuaderno.M_Histocompatibilidad.RV_HISTOCOMP_DOS"
+        Title="RV_HISTOCOMP_DOS" Height="642.5" Width="1314.5">
+    <Grid>
+
+        <Viewer:CrystalReportsViewer Name="crystaHisto_dos"  HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Height="601" Width="1306" Loaded="crystaHisto_Loaded"/>
+
+    </Grid>
+</Window>

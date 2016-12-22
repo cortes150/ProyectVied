@@ -1,0 +1,23 @@
+﻿<Window x:Class="Laboratorio_Desktop.V_Medico"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="V_Medico" Height="317" Width="421">
+    <Grid>
+        <Label Content="Médico" FontSize="16" FontWeight="Bold" Foreground="#FF56A6E8" Height="37" Name="label2" VerticalAlignment="Top" HorizontalAlignment="Left" Width="408" />
+        <Label Content="Prefijo:" Height="28" HorizontalAlignment="Left" Margin="90,43,0,0" Name="label1" VerticalAlignment="Top" />
+        <Label Content="Área:" Height="28" HorizontalAlignment="Left" Margin="99,224,0,0" Name="label3" VerticalAlignment="Top" />
+        <Label Content="Cédula de Identidad:" Height="28" HorizontalAlignment="Left" Margin="16,166,0,0" Name="label4" VerticalAlignment="Top" />
+        <Label Content="Celular:" Height="28" HorizontalAlignment="Left" Margin="87,193,0,0" Name="label5" VerticalAlignment="Top" />
+        <Label Content="Apellido Materno:" Height="28" HorizontalAlignment="Left" Margin="31,137,0,0" Name="label6" VerticalAlignment="Top" />
+        <Label Content="Apellido Paterno:" Height="28" HorizontalAlignment="Left" Margin="35,108,0,0" Name="label7" VerticalAlignment="Top" />
+        <Label Content="Nombre:" Height="28" HorizontalAlignment="Left" Margin="80,79,0,0" Name="label8" VerticalAlignment="Top" />
+       
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="139,43,0,0" Name="tb_Prefijo" VerticalAlignment="Top" Width="120" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="139,79,0,0" Name="tb_Nombre" VerticalAlignment="Top" Width="120" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="139,110,0,0" Name="tb_ApellidoPaterno" VerticalAlignment="Top" Width="120" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="139,139,0,0" Name="tb_ApellidoMaterno" VerticalAlignment="Top" Width="120" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="139,168,0,0" Name="tb_Cedula" VerticalAlignment="Top" Width="120" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="139,195,0,0" Name="tb_Celular" VerticalAlignment="Top" Width="120" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="139,226,0,0" Name="tb_Area" VerticalAlignment="Top" Width="120" />
+    </Grid>
+</Window>
