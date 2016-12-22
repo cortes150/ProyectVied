@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 23, 24.25" name="DBLaboratorio">
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 30, 33.625" name="DBLaboratorio">
   <DataContextMoniker Name="/DBLaboratorioDataContext" />
   <nestedChildShapes>
     <classShape Id="a2fc182a-3704-43c0-8192-30eff2d258a3" absoluteBounds="3.75, 4, 2, 1.193992513020834">
@@ -194,88 +194,520 @@
         <elementListCompartment Id="4dba27c3-4fbd-4402-90b8-3201b01a905d" absoluteBounds="3.765, 22.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(5.65625 : 5.19399251302083); (5.65625 : 9.21875); (6.5 : 9.21875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.65625 : 5.19399251302083); (5.65625 : 9.21875); (6.18166666666667 : 9.21875 : JumpStart); (6.34833333333333 : 9.21875 : JumpEnd); (6.5 : 9.21875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/DBLaboratorioDataContext/Accion/Accion_Accion_Usuario" />
       <nodes>
         <classShapeMoniker Id="a2fc182a-3704-43c0-8192-30eff2d258a3" />
         <classShapeMoniker Id="07562c27-a8f7-4172-a308-373b9d648011" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 11.4118964726562); (6.34375 : 11.4118964726562); (6.34375 : 12.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.5 : 11.1318682594401); (6.34375 : 11.1318682594401); (6.34375 : 12.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DBLaboratorioDataContext/Consulta/Consulta_M_Microorganismo" />
       <nodes>
         <classShapeMoniker Id="6561169f-4c3b-4b36-9983-39d8e9b42efc" />
         <classShapeMoniker Id="298667c3-7355-4b89-aa17-6c94a22e47ff" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 10.8053452089844); (9.25 : 10.8053452089844)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.5 : 11.8461980735677); (6.26041666666667 : 11.8461980735677 : JumpStart); (6.42708333333333 : 11.8461980735677 : JumpEnd); (7.79166666666667 : 11.8461980735677 : JumpStart); (7.95833333333333 : 11.8461980735677 : JumpEnd); (8.91666666666667 : 11.8461980735677 : JumpStart); (9.08333333333333 : 11.8461980735677 : JumpEnd); (9.25 : 11.8461980735677)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/DBLaboratorioDataContext/Consulta/Consulta_M_Sanguinea" />
       <nodes>
         <classShapeMoniker Id="6561169f-4c3b-4b36-9983-39d8e9b42efc" />
         <classShapeMoniker Id="a0b3f020-3e3e-4983-832f-369671c010b0" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(8.5 : 18.001509152494); (8.875 : 17.626509152494); (8.875 : 11.5116744417318); (9.25 : 11.5116744417318)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(8.5 : 18.001509152494); (9.25 : 14.603023725586); (9.25 : 14.603023725586); (9.26041416666667 : 14.603023725586 : JumpStart); (9.45833333333333 : 14.603023725586 : JumpEnd); (9.625 : 14.603023725586)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DBLaboratorioDataContext/SubCategoria/SubCategoria_M_Sanguinea" />
       <nodes>
         <classShapeMoniker Id="dd0179e8-9228-4f98-b973-16f4cc63713c" />
         <classShapeMoniker Id="a0b3f020-3e3e-4983-832f-369671c010b0" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.75 : 19.0681469726563); (6.5 : 19.0681469726563)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.75 : 19.0681469726563); (5.91666666666667 : 19.0681469726563 : JumpStart); (6.08333333333333 : 19.0681469726563 : JumpEnd); (6.26041666666667 : 19.0681469726563 : JumpStart); (6.42708333333333 : 19.0681469726563 : JumpEnd); (6.5 : 19.0681469726563)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DBLaboratorioDataContext/Categoria/Categoria_SubCategoria" />
       <nodes>
         <classShapeMoniker Id="e0136949-39ab-4d28-bb1c-ca7dc1d42e7e" />
         <classShapeMoniker Id="dd0179e8-9228-4f98-b973-16f4cc63713c" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 9.453125); (6.5 : 9.453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 8.90625); (3.16666666666667 : 8.90625 : JumpStart); (3.45833333333333 : 8.90625 : JumpEnd); (5.57291666666667 : 8.90625 : JumpStart); (5.73958333333333 : 8.90625 : JumpEnd); (6.5 : 8.90625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/DBLaboratorioDataContext/Usuario/Usuario_Accion_Usuario" />
       <nodes>
         <classShapeMoniker Id="0c8979db-f32a-4eaf-b330-2aa66c5e75e9" />
         <classShapeMoniker Id="07562c27-a8f7-4172-a308-373b9d648011" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(1.75 : 8.5); (1.75 : 7.3749995); (3.5 : 7.3749995)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(1.75 : 8.5); (1.75 : 8.3237939453125); (2.8125 : 8.3237939453125); (2.8125 : 7.52005126953125); (3.29166666666667 : 7.52005126953125 : JumpStart); (3.45833333333333 : 7.52005126953125 : JumpEnd); (3.5 : 7.52005126953125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/DBLaboratorioDataContext/Usuario/Usuario_Bioquimico" />
       <nodes>
         <classShapeMoniker Id="0c8979db-f32a-4eaf-b330-2aa66c5e75e9" />
         <classShapeMoniker Id="3f18584b-bc06-470a-a834-c8169727f74e" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 10.1402498372396); (3.5 : 10.1402498372396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 10.45599609375); (3.16666666666667 : 10.45599609375 : JumpStart); (3.45833333333333 : 10.45599609375 : JumpEnd); (3.5 : 10.45599609375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/DBLaboratorioDataContext/Usuario/Usuario_Consulta" />
       <nodes>
         <classShapeMoniker Id="0c8979db-f32a-4eaf-b330-2aa66c5e75e9" />
         <classShapeMoniker Id="6561169f-4c3b-4b36-9983-39d8e9b42efc" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(1.75 : 10.6554996744792); (1.75 : 15.1931062825521); (3.5 : 15.1931062825521)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(0.90625 : 10.6554996744792); (0.90625 : 13.96875); (1.29948016666667 : 13.96875 : JumpStart); (1.46614683333333 : 13.96875 : JumpEnd); (1.53776191666667 : 13.96875 : JumpStart); (1.70442858333333 : 13.96875 : JumpEnd); (1.77604366666667 : 13.96875 : JumpStart); (1.94271033333333 : 13.96875 : JumpEnd); (2.01432541666667 : 13.96875 : JumpStart); (2.18099208333333 : 13.96875 : JumpEnd); (2.25260716666667 : 13.96875 : JumpStart); (2.41927383333333 : 13.96875 : JumpEnd); (2.64713641666667 : 13.96875 : JumpStart); (2.81380308333333 : 13.96875 : JumpEnd); (3.5 : 13.96875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/DBLaboratorioDataContext/Usuario/Usuario_Historial_Temporal" />
       <nodes>
         <classShapeMoniker Id="0c8979db-f32a-4eaf-b330-2aa66c5e75e9" />
         <classShapeMoniker Id="fb1f4990-9e46-4400-a07e-8fbcafb4e12d" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(11.5 : 7.66750325520833); (12.46875 : 7.66750325520833); (12.46875 : 3.03049967447917)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(11.5 : 7.66750325520833); (12.46875 : 7.66750325520833); (12.46875 : 3.03049967447917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DBLaboratorioDataContext/Consulta_Laboratorio/Consulta_Laboratorio_Variable_Consulta" />
       <nodes>
         <classShapeMoniker Id="b4e48b86-b562-4586-b7be-3faff6ada575" />
         <classShapeMoniker Id="8bc8cbb6-3a68-406d-96c0-825ce00c9ba1" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(11.5 : 2.01044840494792); (12.25 : 2.01044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(11.5 : 2.01044840494792); (12.25 : 2.01044840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DBLaboratorioDataContext/Variables/Variables_Variable_Consulta" />
       <nodes>
         <classShapeMoniker Id="34ebf604-4189-465d-901b-79ee98ff4cc1" />
         <classShapeMoniker Id="8bc8cbb6-3a68-406d-96c0-825ce00c9ba1" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(8.75 : 1.97199625651042); (9.5 : 1.97199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(8.75 : 1.97199625651042); (9.125 : 1.97199625651042); (9.125 : 2.01044840494792); (9.5 : 2.01044840494792)]" fixedFrom="NotFixed" fixedTo="Algorithm">
       <AssociationMoniker Name="/DBLaboratorioDataContext/Cuadernos/Cuadernos_Variables" />
       <nodes>
         <classShapeMoniker Id="39d861b0-7b77-4793-831b-55221f872f7a" />
         <classShapeMoniker Id="34ebf604-4189-465d-901b-79ee98ff4cc1" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="abaf088b-9eb2-40ad-be6b-099770d8f3ad" absoluteBounds="1.125, 9, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/Accion1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e1ed742c-a14d-4cd5-b630-873f44a5404a" absoluteBounds="1.1400000000000001, 9.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7302187b-3e03-4475-a585-1763fe614c53" absoluteBounds="6.875, 9.25, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/Accion_Usuario1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a1ef8e24-37ab-416f-843a-2b10b3d151fa" absoluteBounds="6.89, 9.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="70ec943f-e912-4712-8141-80d4aa4378e6" absoluteBounds="12.875, 22, 2, 2.5401025390625023">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/Bioquimico1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="612d9f76-1785-48fc-8ec3-9aa5feea05c6" absoluteBounds="12.89, 22.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2ec89f68-87cb-49a4-b74e-84e5fdfe251c" absoluteBounds="1.125, 21.375, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/Categoria1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b1dc6306-5508-4998-ab9f-1a3a30d580c7" absoluteBounds="1.1400000000000001, 21.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bf425cee-0a87-47d2-9282-92a6df60da35" absoluteBounds="6.875, 24.75, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/Consulta1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="158d4eb9-a7bc-4d9a-8a4c-5ceece2ea796" absoluteBounds="6.89, 25.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0d9e7f50-b003-41fc-bf6a-00cb7a984082" absoluteBounds="6.875, 0.75, 2, 2.5401025390625">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/Consulta_Laboratorio1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dfd89919-60f7-4e39-b2fd-2428b7c9b8a9" absoluteBounds="6.89, 1.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bb90b66b-a15b-46af-8270-c105daa1e8e9" absoluteBounds="0.75, 6.875, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/Cuaderno_Usuario1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0602e147-0971-4817-9291-4770f6d46004" absoluteBounds="0.765, 7.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c53772a1-4f1e-45ca-82e3-9dec6e39fc9f" absoluteBounds="21.75, 7.875, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/Cuaderno_UsuarioTemp1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f76fc80f-7ecd-4dd1-b18b-35b676c8a3b4" absoluteBounds="21.765, 8.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d106d0ff-380e-42f0-90f3-984a4e890c86" absoluteBounds="4.125, 3, 2, 1.1939925130208331">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/Cuadernos1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="28ecbdc3-4985-4841-9db0-9c8defe0e24d" absoluteBounds="4.14, 3.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0e17b27a-5160-44f2-a0c3-05ebd691c537" absoluteBounds="21.75, 10.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/Doctor1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="708d1717-3332-4da6-9a1f-1368bedda5e0" absoluteBounds="21.765, 11.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5b7cd9a8-398c-43e5-8d76-79877cf602b5" absoluteBounds="12.875, 25.25, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/Historial_Temporal1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="481674b2-dca9-416c-aabd-3d6b9513b10e" absoluteBounds="12.89, 25.71, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6983e323-b91b-4bec-b384-27db3ab37727" absoluteBounds="21.75, 13.875, 2, 2.7324039713541683">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/M_Antibiograma1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cecdc193-3589-443d-ab3d-e7ed4809b27d" absoluteBounds="21.765, 14.335, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="af132810-b986-4c6d-92be-2ac776a21518" absoluteBounds="21.75, 17.875, 2, 2.5401025390625023">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/M_DetHormonales1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b0bdc69d-8267-406d-bf3d-9e9d41bbe9dd" absoluteBounds="21.765, 18.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="794aa041-1b40-46a2-af7e-5dc104b92816" absoluteBounds="21.75, 21.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/M_Hematologia1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="931e7d72-000c-4b71-bd7b-94f450868af5" absoluteBounds="21.765, 22.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d8519eb8-9ba9-4a22-9db9-21d057c7cd7e" absoluteBounds="21.75, 24.875, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/M_InmunologiaInf1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="32b2d637-2f44-408d-b9d7-214afe425fbc" absoluteBounds="21.765, 25.335, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4ba9ea48-deee-4420-9043-8b665aa9a451" absoluteBounds="15.625, 28.75, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/M_Microorganismo1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7202afc1-ddad-481d-a422-0891478e9c3d" absoluteBounds="15.64, 29.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="51c3f5fa-22b6-4f11-8dce-cb7cfe884df7" absoluteBounds="23.75, 3.875, 2, 2.7324039713541661">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/M_Otros1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6c9a20ea-363e-4977-a2d5-aaa93847c09d" absoluteBounds="23.765, 4.335, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="42b65802-8987-46c3-8107-b3ced5f6f22d" absoluteBounds="9.625, 27.125, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/M_Sanguinea1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="28750a2d-f039-474c-8cb9-7f0a545bb8af" absoluteBounds="9.64, 27.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b8ce85ea-f8ca-4930-af35-93c1db3c799a" absoluteBounds="0.75, 27.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/M_Uroanalisis1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="048413f7-315e-43e1-aa26-621a1bb9061a" absoluteBounds="0.765, 28.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a3bd0f25-37f9-4066-b4a3-181a3bcf4dbe" absoluteBounds="24.75, 7.875, 2, 8.3091455078125023">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/perPersona1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f972368d-3e90-4950-bf65-fe48b8d784f2" absoluteBounds="24.765, 8.335, 1.9700000000000002, 7.7491455078125009" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ca8a95c9-6a56-4a81-9df5-4e13d27ad850" absoluteBounds="24.75, 17.875, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/Reservas1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c27a3fa6-99e3-46d6-a034-9a82cb2a4136" absoluteBounds="24.765, 18.335, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="641c326d-1ab8-491c-b067-1b0e545bae0a" absoluteBounds="24.75, 21.875, 2, 10.424461263020827">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/SE_HC1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d4836e86-59d2-409c-a54a-e6a273b09558" absoluteBounds="24.765, 22.335, 1.9700000000000002, 9.8644612630208321" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eb18d591-c001-4b4d-b50e-c00954719176" absoluteBounds="18.75, 28.875, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/Solicitud1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="84db020a-8ba5-4772-a81c-c50e77ae5d5a" absoluteBounds="18.765, 29.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9a6f5dae-e082-4c64-bcfd-8468de890169" absoluteBounds="6.875, 29.25, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/SubCategoria1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7c5c9d5a-c306-4760-80fb-bf1a4720914a" absoluteBounds="6.89, 29.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8427deb7-70a0-4a60-9284-ccd297f56e88" absoluteBounds="26.75, 3.875, 2, 1.5785953776041661">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/T_Lepra1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="545e4c72-421a-4954-80a6-625a3ff19e8a" absoluteBounds="26.765, 4.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0eabcf8a-86db-4239-a11b-3fbef2fb3268" absoluteBounds="0.75, 30.875, 2, 2.5401025390624987">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/T_MarcadorTumoral1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6c764808-2dae-4dd4-8a81-a10e8d0532d0" absoluteBounds="0.765, 31.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c197cab3-8d86-4cc5-a5bb-f970e8a84814" absoluteBounds="27.75, 6.875, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/T_Micologia1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f8a2875a-9f19-480f-85a5-7af40fd06706" absoluteBounds="27.765, 7.335, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d702d27e-8fc5-4717-b365-021f85eaeae7" absoluteBounds="1.125, 14.75, 2, 2.1554996744791683">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/Usuario1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fcbede40-802c-4c90-b40c-a9e142201694" absoluteBounds="1.1400000000000001, 15.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e06ce39b-b3b4-4abd-b3c7-13243b08da93" absoluteBounds="12.625, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/Variable_Consulta1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="27fc0b4e-bc67-484b-a0fa-b81e48661403" absoluteBounds="12.64, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3bc455ea-a298-4726-906d-476894070d5d" absoluteBounds="9.875, 1.125, 2, 1.7708968098958333">
+      <DataClassMoniker Name="/DBLaboratorioDataContext/Variables1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a42c16c1-1c68-46b1-b9ab-7e7ee4b5fe81" absoluteBounds="9.89, 1.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.125 : 9.453125); (3.29166666666667 : 9.453125 : JumpStart); (3.45833333333333 : 9.453125 : JumpEnd); (6.18166666666667 : 9.453125 : JumpStart); (6.34833333333333 : 9.453125 : JumpEnd); (6.5 : 9.453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Accion1/Accion1_Accion_Usuario" />
+      <nodes>
+        <classShapeMoniker Id="abaf088b-9eb2-40ad-be6b-099770d8f3ad" />
+        <classShapeMoniker Id="07562c27-a8f7-4172-a308-373b9d648011" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 4.72524251302083); (7.71875 : 4.72524251302083); (7.71875 : 9.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Accion/Accion_Accion_Usuario1" />
+      <nodes>
+        <classShapeMoniker Id="a2fc182a-3704-43c0-8192-30eff2d258a3" />
+        <classShapeMoniker Id="7302187b-3e03-4475-a585-1763fe614c53" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.125 : 9); (2.125 : 8.75); (3.25 : 8.75); (3.25 : 9.0401025390625); (3.29166666666667 : 9.0401025390625 : JumpStart); (3.45833333333333 : 9.0401025390625 : JumpEnd); (5.57291666666667 : 9.0401025390625 : JumpStart); (5.73958333333333 : 9.0401025390625 : JumpEnd); (6.265 : 9.0401025390625); (6.265 : 10.4800434453125); (6.875 : 10.4800434453125)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Accion1/Accion1_Accion_Usuario1" />
+      <nodes>
+        <classShapeMoniker Id="abaf088b-9eb2-40ad-be6b-099770d8f3ad" />
+        <classShapeMoniker Id="7302187b-3e03-4475-a585-1763fe614c53" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.87942626953125); (3.16666666666667 : 8.87942626953125 : JumpStart); (3.45833333333333 : 8.87942626953125 : JumpEnd); (5.57291666666667 : 8.87942626953125 : JumpStart); (5.73958333333333 : 8.87942626953125 : JumpEnd); (7.296875 : 8.87942626953125); (7.296875 : 9.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Usuario/Usuario_Accion_Usuario1" />
+      <nodes>
+        <classShapeMoniker Id="0c8979db-f32a-4eaf-b330-2aa66c5e75e9" />
+        <classShapeMoniker Id="7302187b-3e03-4475-a585-1763fe614c53" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.859377 : 10.6554996744792); (1.859377 : 14.5); (2.01432541666667 : 14.5 : JumpStart); (2.18099208333333 : 14.5 : JumpEnd); (2.64713641666667 : 14.5 : JumpStart); (2.81380308333333 : 14.5 : JumpEnd); (3.25 : 14.5); (3.25 : 17.3862125651042); (3.29166666666667 : 17.3862125651042 : JumpStart); (3.45833333333333 : 17.3862125651042 : JumpEnd); (5.91666666666667 : 17.3862125651042 : JumpStart); (6.08333333333333 : 17.3862125651042 : JumpEnd); (6.26041666666667 : 17.3862125651042 : JumpStart); (6.42708333333333 : 17.3862125651042 : JumpEnd); (9.16666666666667 : 17.3862125651042 : JumpStart); (9.45833333333333 : 17.3862125651042 : JumpEnd); (9.5 : 17.3862125651042); (9.5 : 23.5014469401042); (9.54166666666667 : 23.5014469401042 : JumpStart); (9.70833333333333 : 23.5014469401042 : JumpEnd); (12.1666666666667 : 23.5014469401042 : JumpStart); (12.3333333333333 : 23.5014469401042 : JumpEnd); (12.5 : 23.5014469401042); (12.5 : 23.2700512695313); (12.875 : 23.2700512695313)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Usuario/Usuario_Bioquimico1" />
+      <nodes>
+        <classShapeMoniker Id="0c8979db-f32a-4eaf-b330-2aa66c5e75e9" />
+        <classShapeMoniker Id="70ec943f-e912-4712-8141-80d4aa4378e6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.96125 : 21.375); (2.96125 : 18.15625); (3.29166666666667 : 18.15625 : JumpStart); (3.45833333333333 : 18.15625 : JumpEnd); (5.91666666666667 : 18.15625 : JumpStart); (6.08333333333333 : 18.15625 : JumpEnd); (6.26041666666667 : 18.15625 : JumpStart); (6.42708333333333 : 18.15625 : JumpEnd); (6.5 : 18.15625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Categoria1/Categoria1_SubCategoria" />
+      <nodes>
+        <classShapeMoniker Id="2ec89f68-87cb-49a4-b74e-84e5fdfe251c" />
+        <classShapeMoniker Id="dd0179e8-9228-4f98-b973-16f4cc63713c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.3359405 : 10.6554996744792); (2.3359405 : 14.25); (2.64713641666667 : 14.25 : JumpStart); (2.81380308333333 : 14.25 : JumpEnd); (3.375 : 14.25); (3.375 : 26.2123527018229); (3.41666666666667 : 26.2123527018229 : JumpStart); (3.58333333333333 : 26.2123527018229 : JumpEnd); (5.91666666666667 : 26.2123527018229 : JumpStart); (6.20833333333333 : 26.2123527018229 : JumpEnd); (6.57291666666667 : 26.2123527018229 : JumpStart); (6.73958333333333 : 26.2123527018229 : JumpEnd); (6.875 : 26.2123527018229)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Usuario/Usuario_Consulta1" />
+      <nodes>
+        <classShapeMoniker Id="0c8979db-f32a-4eaf-b330-2aa66c5e75e9" />
+        <classShapeMoniker Id="bf425cee-0a87-47d2-9282-92a6df60da35" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.875 : 25.4499238509115); (6.73958333333333 : 25.4499238509115 : JumpStart); (6.57291666666667 : 25.4499238509115 : JumpEnd); (6.34375 : 25.4499238509115); (6.34375 : 15.4247054036458)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Consulta1/Consulta1_M_Microorganismo" />
+      <nodes>
+        <classShapeMoniker Id="bf425cee-0a87-47d2-9282-92a6df60da35" />
+        <classShapeMoniker Id="298667c3-7355-4b89-aa17-6c94a22e47ff" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.875 : 25.90625); (8.91666666666667 : 25.90625 : JumpStart); (9.08333333333333 : 25.90625 : JumpEnd); (9.375 : 25.90625); (9.375 : 12.1554996744792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Consulta1/Consulta1_M_Sanguinea" />
+      <nodes>
+        <classShapeMoniker Id="bf425cee-0a87-47d2-9282-92a6df60da35" />
+        <classShapeMoniker Id="a0b3f020-3e3e-4983-832f-369671c010b0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.875 : 0.96875); (10.7916666666667 : 0.968749999999999 : JumpStart); (10.9583333333333 : 0.96875 : JumpEnd); (12.25 : 0.96875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Consulta_Laboratorio1/Consulta_Laboratorio1_Variable_Consulta" />
+      <nodes>
+        <classShapeMoniker Id="0d9e7f50-b003-41fc-bf6a-00cb7a984082" />
+        <classShapeMoniker Id="8bc8cbb6-3a68-406d-96c0-825ce00c9ba1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.125 : 3.77329752604167); (10.5 : 3.77329752604167); (10.5 : 2.89589680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Cuadernos1/Cuadernos1_Variables" />
+      <nodes>
+        <classShapeMoniker Id="d106d0ff-380e-42f0-90f3-984a4e890c86" />
+        <classShapeMoniker Id="34ebf604-4189-465d-901b-79ee98ff4cc1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.3828135 : 10.6554996744792); (1.3828135 : 14.625); (1.53776191666667 : 14.625 : JumpStart); (1.70442858333333 : 14.625 : JumpEnd); (2.01432541666667 : 14.625 : JumpStart); (2.18099208333333 : 14.625 : JumpEnd); (2.64713641666667 : 14.625 : JumpStart); (2.81380308333333 : 14.625 : JumpEnd); (3.3125 : 14.625); (3.3125 : 17.6362125651042); (5.91666666666667 : 17.6362125651042 : JumpStart); (6.08333333333333 : 17.6362125651042 : JumpEnd); (6.26041666666667 : 17.6362125651042 : JumpStart); (6.42708333333333 : 17.6362125651042 : JumpEnd); (9.16666666666667 : 17.6362125651042 : JumpStart); (9.58333333333333 : 17.6362125651042 : JumpEnd); (9.625 : 17.6362125651042); (9.625 : 26.875); (12.5 : 26.875); (12.5 : 27.1931062825521); (12.875 : 27.1931062825521)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Usuario/Usuario_Historial_Temporal1" />
+      <nodes>
+        <classShapeMoniker Id="0c8979db-f32a-4eaf-b330-2aa66c5e75e9" />
+        <classShapeMoniker Id="5b7cd9a8-398c-43e5-8d76-79877cf602b5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 11.4890331665039); (6.26041666666667 : 11.4890331665039 : JumpStart); (6.42708333333333 : 11.4890331665039 : JumpEnd); (7.79166666666667 : 11.4890331665039 : JumpStart); (7.95833333333333 : 11.4890331665039 : JumpEnd); (9 : 11.4890331665039); (9 : 14.1554996744792); (9.26041416666667 : 14.1554996744792 : JumpStart); (9.45833333333333 : 14.1554996744792 : JumpEnd); (14.5 : 14.1554996744792); (14.5 : 15.5); (15.5 : 15.5); (15.5 : 28.375); (16.0104141666667 : 28.375 : JumpStart); (16.1770808333333 : 28.375 : JumpEnd); (16.625 : 28.375); (16.625 : 28.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Consulta/Consulta_M_Microorganismo1" />
+      <nodes>
+        <classShapeMoniker Id="6561169f-4c3b-4b36-9983-39d8e9b42efc" />
+        <classShapeMoniker Id="4ba9ea48-deee-4420-9043-8b665aa9a451" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.875 : 24.96875); (8.91666666666667 : 24.96875 : JumpStart); (9.08333333333333 : 24.96875 : JumpEnd); (9.26041416666667 : 24.96875 : JumpStart); (9.45833333333333 : 24.96875 : JumpEnd); (9.54166666666667 : 24.96875 : JumpStart); (9.70833333333333 : 24.96875 : JumpEnd); (15.4166666666667 : 24.96875 : JumpStart); (15.5833333333333 : 24.96875 : JumpEnd); (16.0937475 : 24.96875); (16.0937475 : 28.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Consulta1/Consulta1_M_Microorganismo1" />
+      <nodes>
+        <classShapeMoniker Id="bf425cee-0a87-47d2-9282-92a6df60da35" />
+        <classShapeMoniker Id="4ba9ea48-deee-4420-9043-8b665aa9a451" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 12.5497054036458); (4.5 : 13); (6 : 13); (6 : 28.4623527018229); (6.04166666666667 : 28.4623527018229 : JumpStart); (6.20833333333333 : 28.4623527018229 : JumpEnd); (9.26041416666667 : 28.4623527018229 : JumpStart); (9.42708083333333 : 28.4623527018229 : JumpEnd); (9.625 : 28.4623527018229)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Consulta/Consulta_M_Sanguinea1" />
+      <nodes>
+        <classShapeMoniker Id="6561169f-4c3b-4b36-9983-39d8e9b42efc" />
+        <classShapeMoniker Id="42b65802-8987-46c3-8107-b3ced5f6f22d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.875 : 27.3998527018229); (9.26041416666667 : 27.3998527018229 : JumpStart); (9.42708083333333 : 27.3998527018229 : JumpEnd); (9.625 : 27.3998527018229)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Consulta1/Consulta1_M_Sanguinea1" />
+      <nodes>
+        <classShapeMoniker Id="bf425cee-0a87-47d2-9282-92a6df60da35" />
+        <classShapeMoniker Id="42b65802-8987-46c3-8107-b3ced5f6f22d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.65625 : 19.9631982421875); (6.65625 : 28.0685265527344); (9.26041416666667 : 28.0685265527344 : JumpStart); (9.42708083333333 : 28.0685265527344 : JumpEnd); (9.625 : 28.0685265527344)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/SubCategoria/SubCategoria_M_Sanguinea1" />
+      <nodes>
+        <classShapeMoniker Id="dd0179e8-9228-4f98-b973-16f4cc63713c" />
+        <classShapeMoniker Id="42b65802-8987-46c3-8107-b3ced5f6f22d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.875 : 30.2780989583333); (9.3437475 : 30.2780989583333); (9.3437475 : 12.1554996744792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/SubCategoria1/SubCategoria1_M_Sanguinea" />
+      <nodes>
+        <classShapeMoniker Id="9a6f5dae-e082-4c64-bcfd-8468de890169" />
+        <classShapeMoniker Id="a0b3f020-3e3e-4983-832f-369671c010b0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.875 : 29.7480473164063); (9.26041416666667 : 29.7480473164063 : JumpStart); (9.42708083333333 : 29.7480473164063 : JumpEnd); (10.625 : 29.7480473164063); (10.625 : 29.2804996744792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/SubCategoria1/SubCategoria1_M_Sanguinea1" />
+      <nodes>
+        <classShapeMoniker Id="9a6f5dae-e082-4c64-bcfd-8468de890169" />
+        <classShapeMoniker Id="42b65802-8987-46c3-8107-b3ced5f6f22d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 19.7612939453125); (5.94107443490112 : 19.9523683802136 : JumpStart); (6.05892556509888 : 20.0702195104114 : JumpEnd); (6.125 : 20.1362939453125); (6.125 : 30.2315991210938); (6.875 : 30.2315991210938)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Categoria/Categoria_SubCategoria1" />
+      <nodes>
+        <classShapeMoniker Id="e0136949-39ab-4d28-bb1c-ca7dc1d42e7e" />
+        <classShapeMoniker Id="9a6f5dae-e082-4c64-bcfd-8468de890169" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.96875 : 22.7612939453125); (2.96875 : 30.5533020605469); (6.875 : 30.5533020605469)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Categoria1/Categoria1_SubCategoria1" />
+      <nodes>
+        <classShapeMoniker Id="2ec89f68-87cb-49a4-b74e-84e5fdfe251c" />
+        <classShapeMoniker Id="9a6f5dae-e082-4c64-bcfd-8468de890169" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.73046975 : 14.75); (2.73046975 : 10.9054996744792); (3.25 : 10.9054996744792); (3.25 : 9.375); (3.29166666666667 : 9.375 : JumpStart); (3.45833333333333 : 9.375 : JumpEnd); (3.625 : 9.375); (3.625 : 9.09817376953125); (5.57291666666667 : 9.09817376953125 : JumpStart); (5.73958333333333 : 9.09817376953125 : JumpEnd); (6.5 : 9.09817376953125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Usuario1/Usuario1_Accion_Usuario" />
+      <nodes>
+        <classShapeMoniker Id="d702d27e-8fc5-4717-b365-021f85eaeae7" />
+        <classShapeMoniker Id="07562c27-a8f7-4172-a308-373b9d648011" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.125 : 15.8277498372396); (3.16666666666667 : 15.8277498372396 : JumpStart); (3.39583333333333 : 15.8277498372396 : JumpEnd); (3.4375 : 15.8277498372396); (3.4375 : 13.1875); (5.91666666666667 : 13.1875 : JumpStart); (6.08333333333333 : 13.1875 : JumpEnd); (6.1875 : 13.1875); (6.1875 : 12.4375); (7.875 : 12.4375); (7.875 : 10.6362939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Usuario1/Usuario1_Accion_Usuario1" />
+      <nodes>
+        <classShapeMoniker Id="d702d27e-8fc5-4717-b365-021f85eaeae7" />
+        <classShapeMoniker Id="7302187b-3e03-4475-a585-1763fe614c53" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.09765875 : 14.75); (2.09765875 : 11.1554996744792); (2.25260716666667 : 11.1554996744792 : JumpStart); (2.41927383333333 : 11.1554996744792 : JumpEnd); (2.64713641666667 : 11.1554996744792 : JumpStart); (2.81380308333333 : 11.1554996744792 : JumpEnd); (3.375 : 11.1554996744792); (3.375 : 6.85377363476563); (3.5 : 6.85377363476563)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Usuario1/Usuario1_Bioquimico" />
+      <nodes>
+        <classShapeMoniker Id="d702d27e-8fc5-4717-b365-021f85eaeae7" />
+        <classShapeMoniker Id="3f18584b-bc06-470a-a834-c8169727f74e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.0431255 : 16.9054996744792); (2.0431255 : 20.5); (2.87791666666667 : 20.5 : JumpStart); (3.04458333333333 : 20.5 : JumpEnd); (3.29166666666667 : 20.5 : JumpStart); (3.58333333333333 : 20.5 : JumpEnd); (5.91666666666667 : 20.5 : JumpStart); (6.20833333333333 : 20.5 : JumpEnd); (6.26041666666667 : 20.5 : JumpStart); (6.42708333333333 : 20.5 : JumpEnd); (6.57291666666667 : 20.5 : JumpStart); (6.73958333333333 : 20.5 : JumpEnd); (9.125 : 20.5); (9.125 : 23.7514469401042); (9.26041416666667 : 23.7514469401042 : JumpStart); (9.45833333333333 : 23.7514469401042 : JumpEnd); (9.54166666666667 : 23.7514469401042 : JumpStart); (9.70833333333333 : 23.7514469401042 : JumpEnd); (12.25 : 23.7514469401042); (12.25 : 22.6037736347656); (12.875 : 22.6037736347656)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Usuario1/Usuario1_Bioquimico1" />
+      <nodes>
+        <classShapeMoniker Id="d702d27e-8fc5-4717-b365-021f85eaeae7" />
+        <classShapeMoniker Id="70ec943f-e912-4712-8141-80d4aa4378e6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.62109525 : 14.75); (1.62109525 : 11.5694159655449); (1.77604366666667 : 11.5694159655449 : JumpStart); (1.94271033333333 : 11.5694159655449 : JumpEnd); (2.01432541666667 : 11.5694159655449 : JumpStart); (2.18099208333333 : 11.5694159655449 : JumpEnd); (2.25260716666667 : 11.5694159655449 : JumpStart); (2.41927383333333 : 11.5694159655449 : JumpEnd); (2.64713641666667 : 11.5694159655449 : JumpStart); (2.81380308333333 : 11.5694159655449 : JumpEnd); (3.5 : 11.5694159655449)]" fixedFrom="Algorithm" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Usuario1/Usuario1_Consulta" />
+      <nodes>
+        <classShapeMoniker Id="d702d27e-8fc5-4717-b365-021f85eaeae7" />
+        <classShapeMoniker Id="6561169f-4c3b-4b36-9983-39d8e9b42efc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.53344025 : 16.9054996744792); (2.53344025 : 20.25); (2.87791666666667 : 20.25 : JumpStart); (3.04458333333333 : 20.25 : JumpEnd); (3.29166666666667 : 20.25 : JumpStart); (3.45833333333333 : 20.25 : JumpEnd); (3.5 : 20.25); (3.5 : 26.9747810527344); (5.91666666666667 : 26.9747810527344 : JumpStart); (6.20833333333333 : 26.9747810527344 : JumpEnd); (6.57291666666667 : 26.9747810527344 : JumpStart); (6.73958333333333 : 26.9747810527344 : JumpEnd); (6.875 : 26.9747810527344)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Usuario1/Usuario1_Consulta1" />
+      <nodes>
+        <classShapeMoniker Id="d702d27e-8fc5-4717-b365-021f85eaeae7" />
+        <classShapeMoniker Id="bf425cee-0a87-47d2-9282-92a6df60da35" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.125 : 15.2263749186198); (3.16666666666667 : 15.2263749186198 : JumpStart); (3.45833333333333 : 15.2263749186198 : JumpEnd); (3.5 : 15.2263749186198)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Usuario1/Usuario1_Historial_Temporal" />
+      <nodes>
+        <classShapeMoniker Id="d702d27e-8fc5-4717-b365-021f85eaeae7" />
+        <classShapeMoniker Id="fb1f4990-9e46-4400-a07e-8fbcafb4e12d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.55281075 : 16.9054996744792); (1.55281075 : 20.625); (2.87791666666667 : 20.625 : JumpStart); (3.04458333333333 : 20.625 : JumpEnd); (3.29166666666667 : 20.625 : JumpStart); (3.58333333333333 : 20.625 : JumpEnd); (5.91666666666667 : 20.625 : JumpStart); (6.20833333333333 : 20.625 : JumpEnd); (6.26041666666667 : 20.625 : JumpStart); (6.42708333333333 : 20.625 : JumpEnd); (6.57291666666667 : 20.625 : JumpStart); (6.73958333333333 : 20.625 : JumpEnd); (9 : 20.625); (9 : 26.875); (9.26041416666667 : 26.875 : JumpStart); (9.42708083333333 : 26.875 : JumpEnd); (12.25 : 26.875); (12.25 : 28.1959114238281); (12.875 : 28.1959114238281)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Usuario1/Usuario1_Historial_Temporal1" />
+      <nodes>
+        <classShapeMoniker Id="d702d27e-8fc5-4717-b365-021f85eaeae7" />
+        <classShapeMoniker Id="5b7cd9a8-398c-43e5-8d76-79877cf602b5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.5 : 5.25); (11.875 : 4.875); (11.875 : 3.28049967447917); (12.25 : 3.28049967447917); (12.625 : 2.90549967447917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Consulta_Laboratorio/Consulta_Laboratorio_Variable_Consulta1" />
+      <nodes>
+        <classShapeMoniker Id="b4e48b86-b562-4586-b7be-3faff6ada575" />
+        <classShapeMoniker Id="e06ce39b-b3b4-4abd-b3c7-13243b08da93" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.875 : 0.796875); (12.625 : 0.796875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Consulta_Laboratorio1/Consulta_Laboratorio1_Variable_Consulta1" />
+      <nodes>
+        <classShapeMoniker Id="0d9e7f50-b003-41fc-bf6a-00cb7a984082" />
+        <classShapeMoniker Id="e06ce39b-b3b4-4abd-b3c7-13243b08da93" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.5 : 1.19875); (12.625 : 1.19875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Variables/Variables_Variable_Consulta1" />
+      <nodes>
+        <classShapeMoniker Id="34ebf604-4189-465d-901b-79ee98ff4cc1" />
+        <classShapeMoniker Id="e06ce39b-b3b4-4abd-b3c7-13243b08da93" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.875 : 2.48442510742188); (12.25 : 2.48442510742188)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Variables1/Variables1_Variable_Consulta" />
+      <nodes>
+        <classShapeMoniker Id="3bc455ea-a298-4726-906d-476894070d5d" />
+        <classShapeMoniker Id="8bc8cbb6-3a68-406d-96c0-825ce00c9ba1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.875 : 1.125); (10.875 : 0.7734375); (12.625 : 0.7734375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Variables1/Variables1_Variable_Consulta1" />
+      <nodes>
+        <classShapeMoniker Id="3bc455ea-a298-4726-906d-476894070d5d" />
+        <classShapeMoniker Id="e06ce39b-b3b4-4abd-b3c7-13243b08da93" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 2.56899251302083); (9.125 : 2.94399251302083); (9.125 : 3.27089680989583); (9.5 : 3.27089680989583); (9.875 : 2.89589680989583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Cuadernos/Cuadernos_Variables1" />
+      <nodes>
+        <classShapeMoniker Id="39d861b0-7b77-4793-831b-55221f872f7a" />
+        <classShapeMoniker Id="3bc455ea-a298-4726-906d-476894070d5d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.125 : 3.53169753255208); (10.4166666666667 : 3.53169753255208 : JumpStart); (10.5833333333333 : 3.53169753255208 : JumpEnd); (11.2187525 : 3.53169753255208); (11.2187525 : 2.89589680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DBLaboratorioDataContext/Cuadernos1/Cuadernos1_Variables1" />
+      <nodes>
+        <classShapeMoniker Id="d106d0ff-380e-42f0-90f3-984a4e890c86" />
+        <classShapeMoniker Id="3bc455ea-a298-4726-906d-476894070d5d" />
       </nodes>
     </associationConnector>
   </nestedChildShapes>

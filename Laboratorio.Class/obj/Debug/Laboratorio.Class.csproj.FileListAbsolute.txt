@@ -60,3 +60,8 @@ C:\Users\alejandro\Desktop\Alex 150816 sevidor local\Laboratorio DC!\Laboratorio
 C:\Users\alejandro\Desktop\Alex 150816 sevidor local\Laboratorio DC!\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\obj\Debug\Laboratorio.Class.csprojResolveAssemblyReference.cache
 C:\Users\alejandro\Desktop\Alex 150816 sevidor local\Laboratorio DC!\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\obj\Debug\Laboratorio.Class.dll
 C:\Users\alejandro\Desktop\Alex 150816 sevidor local\Laboratorio DC!\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio.Class\obj\Debug\Laboratorio.Class.pdb
+C:\Users\alejandro\Documents\ProyectVied\Laboratorio.Class\bin\Debug\Laboratorio.Class.dll
+C:\Users\alejandro\Documents\ProyectVied\Laboratorio.Class\bin\Debug\Laboratorio.Class.pdb
+C:\Users\alejandro\Documents\ProyectVied\Laboratorio.Class\obj\Debug\Laboratorio.Class.csprojResolveAssemblyReference.cache
+C:\Users\alejandro\Documents\ProyectVied\Laboratorio.Class\obj\Debug\Laboratorio.Class.dll
+C:\Users\alejandro\Documents\ProyectVied\Laboratorio.Class\obj\Debug\Laboratorio.Class.pdb
