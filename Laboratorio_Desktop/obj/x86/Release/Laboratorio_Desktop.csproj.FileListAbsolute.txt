@@ -2876,3 +2876,6 @@ C:\Users\alejandro\Desktop\Ultimo\Alex 51016 sevidor local\Laboratorio DC!\Labor
 C:\Users\alejandro\Desktop\Ultimo\Alex 51016 sevidor local\Laboratorio DC!\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio_Desktop\obj\x86\Release\Laboratorio_Desktop.g.resources
 C:\Users\alejandro\Desktop\Ultimo\Alex 51016 sevidor local\Laboratorio DC!\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio_Desktop\obj\x86\Release\Laboratorio_Desktop.Properties.Resources.resources
 C:\Users\alejandro\Desktop\Ultimo\Alex 51016 sevidor local\Laboratorio DC!\Laboratorio DC!\Laboratorio DC!\Laboratorio_Desktop\Laboratorio_Desktop\obj\x86\Release\Laboratorio_Desktop.csproj.GenerateResource.Cache
+C:\Users\alejandro\Documents\Viedma\Laboratorio_Desktop\bin\Release\Laboratorio_Desktop.exe.config
+C:\Users\alejandro\Documents\Viedma\Laboratorio_Desktop\obj\x86\Release\Laboratorio_Desktop.exe
+C:\Users\alejandro\Documents\Viedma\Laboratorio_Desktop\obj\x86\Release\Laboratorio_Desktop.pdb

@@ -20,6 +20,7 @@ namespace Laboratorio_Desktop
     /// </summary>
     public partial class Index : Page
     {
+        //hola probando github
         private Frame fm;
         private RibbonGroup mb;
         private RibbonGroup mbio;
